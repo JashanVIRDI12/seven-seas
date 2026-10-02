@@ -1,0 +1,188 @@
+[
+  {
+    "width": 1440,
+    "height": 900,
+    "overflow": false,
+    "sectionOverflow": false,
+    "titleVisible": true,
+    "imageLoaded": true,
+    "phone": "tel:+16393360003",
+    "process": "/how-it-works",
+    "buttons": [
+      {
+        "width": 186.53125,
+        "height": 56
+      },
+      {
+        "width": 235.421875,
+        "height": 56
+      }
+    ],
+    "violations": [],
+    "errors": [],
+    "pins": 2
+  },
+  {
+    "width": 1024,
+    "height": 768,
+    "overflow": false,
+    "sectionOverflow": false,
+    "titleVisible": true,
+    "imageLoaded": true,
+    "phone": "tel:+16393360003",
+    "process": "/how-it-works",
+    "buttons": [
+      {
+        "width": 186.53125,
+        "height": 56
+      },
+      {
+        "width": 235.421875,
+        "height": 56
+      }
+    ],
+    "violations": [],
+    "errors": [],
+    "pins": 2
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "overflow": false,
+    "sectionOverflow": false,
+    "titleVisible": true,
+    "imageLoaded": true,
+    "phone": "tel:+16393360003",
+    "process": "/how-it-works",
+    "buttons": [
+      {
+        "width": 186.53125,
+        "height": 56
+      },
+      {
+        "width": 235.421875,
+        "height": 56
+      }
+    ],
+    "violations": [],
+    "errors": [],
+    "pins": 0
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "overflow": false,
+    "sectionOverflow": false,
+    "titleVisible": true,
+    "imageLoaded": true,
+    "phone": "tel:+16393360003",
+    "process": "/how-it-works",
+    "buttons": [
+      {
+        "width": 186.53125,
+        "height": 56
+      },
+      {
+        "width": 235.421875,
+        "height": 56
+      }
+    ],
+    "violations": [],
+    "errors": [],
+    "pins": 0
+  },
+  {
+    "width": 320,
+    "height": 640,
+    "overflow": false,
+    "sectionOverflow": false,
+    "titleVisible": true,
+    "imageLoaded": true,
+    "phone": "tel:+16393360003",
+    "process": "/how-it-works",
+    "buttons": [
+      {
+        "width": 186.53125,
+        "height": 56
+      },
+      {
+        "width": 235.421875,
+        "height": 56
+      }
+    ],
+    "violations": [],
+    "errors": [],
+    "pins": 0
+  },
+  {
+    "width": 844,
+    "height": 390,
+    "overflow": false,
+    "sectionOverflow": false,
+    "titleVisible": true,
+    "imageLoaded": true,
+    "phone": "tel:+16393360003",
+    "process": "/how-it-works",
+    "buttons": [
+      {
+        "width": 186.53125,
+        "height": 56
+      },
+      {
+        "width": 235.421875,
+        "height": 56
+      }
+    ],
+    "violations": [],
+    "errors": [],
+    "pins": 0
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "reducedMotion": "reduce",
+    "overflow": false,
+    "sectionOverflow": false,
+    "titleVisible": true,
+    "imageLoaded": true,
+    "phone": "tel:+16393360003",
+    "process": "/how-it-works",
+    "buttons": [
+      {
+        "width": 186.53125,
+        "height": 56
+      },
+      {
+        "width": 235.421875,
+        "height": 56
+      }
+    ],
+    "violations": [],
+    "errors": [],
+    "pins": 0
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "javaScriptEnabled": false,
+    "overflow": false,
+    "sectionOverflow": false,
+    "titleVisible": true,
+    "imageLoaded": true,
+    "phone": "tel:+16393360003",
+    "process": "/how-it-works",
+    "buttons": [
+      {
+        "width": 186.53125,
+        "height": 56
+      },
+      {
+        "width": 235.421875,
+        "height": 56
+      }
+    ],
+    "violations": [],
+    "errors": [],
+    "pins": 0
+  }
+]

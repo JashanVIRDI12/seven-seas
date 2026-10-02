@@ -44,7 +44,7 @@ Open http://localhost:3000. For a production preview, run `npm run build`, then
   `app/how-it-works/page.tsx` and `app/contact/page.tsx` are the inner pages. Service copy is in
   `data/services.ts`; every image, description, and crop focus is in `data/photos.ts`.
 - `public/images/generated/` contains the 16 optimized WebP replacements.
-  `assets/image-masters/` retains native PNG masters; `docs/image-prompts.json`
+  `assets/image-masters/` contains lossless WebP masters and retained PNG originals; `docs/image-prompts.json`
   records the complete prompts and generated dimensions.
 - `node scripts/generate-share-image.mjs` rebuilds both social previews from
   the generated highway image, self-hosted fonts, and configured phone number.

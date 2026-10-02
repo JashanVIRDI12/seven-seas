@@ -1,4 +1,4 @@
-import { readFile } from "node:fs/promises";
+import { mkdir, readFile } from "node:fs/promises";
 import { chromium } from "playwright";
 import sharp from "sharp";
 
@@ -38,9 +38,12 @@ try {
   await page.evaluate(() => document.fonts.ready);
   const screenshot = await page.screenshot({ type: "png" });
   const jpg = await sharp(screenshot).jpeg({ quality: 92, mozjpeg: true }).toBuffer();
+  await mkdir("public/images/metadata", { recursive: true });
   await Promise.all([
     sharp(jpg).toFile("app/opengraph-image.jpg"),
     sharp(jpg).toFile("app/twitter-image.jpg"),
+    sharp(screenshot).webp({ quality: 90, effort: 3 }).toFile("public/images/metadata/opengraph-image.webp"),
+    sharp(screenshot).webp({ quality: 90, effort: 3 }).toFile("public/images/metadata/twitter-image.webp"),
   ]);
   console.log("Updated both 1200 × 630 share images from the new highway visual.");
 } finally {

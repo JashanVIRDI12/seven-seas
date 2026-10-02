@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { business } from "@/data/business";
 import { canonical } from "@/lib/site";
 import { PhotoHero } from "@/components/PhotoHero";
-import { HighlightText } from "@/components/HighlightText";
+import { AboutIntro } from "@/components/AboutIntro";
 import { PhotoCards } from "@/components/PhotoCards";
 import { Facts } from "@/components/Facts";
 import { Mosaic } from "@/components/Mosaic";
@@ -37,11 +37,7 @@ export default function AboutPage() {
         }
       />
 
-      <HighlightText
-        label="Why we work the way we do"
-        text="We know what a stopped truck costs. [[Freight to deliver]], a crew waiting, another long stretch of highway ahead. So the first step is always [[a straight conversation]]: what’s wrong, [[whether we can take it on]] and [[when you can bring it in]]."
-        photos={["hands", "truckEngine"]}
-      />
+      <AboutIntro />
 
       <Facts />
 

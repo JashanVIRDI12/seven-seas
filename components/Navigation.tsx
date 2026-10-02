@@ -57,7 +57,7 @@ export function Navigation() {
 
   // A beacon pill follows the section being read.
   useGSAP(
-    () => {
+    (_context, contextSafe) => {
       const links = gsap.utils.toArray<HTMLElement>(
         ".nav-link",
         header.current,
@@ -71,12 +71,23 @@ export function Navigation() {
         const link = links[index];
         if (!link) return;
         link.classList.add("is-active");
-        gsap.set(indicator.current, {
-          x: link.offsetLeft,
-          width: link.offsetWidth,
-          autoAlpha: 1,
+        const placeIndicator = contextSafe!(() => {
+          gsap.set(indicator.current, {
+            x: link.offsetLeft,
+            width: link.offsetWidth,
+            autoAlpha: link.offsetWidth > 0 ? 1 : 0,
+          });
         });
-        return () => link.classList.remove("is-active");
+        placeIndicator();
+        // The desktop links can start hidden on phones. Re-measure when
+        // the menu becomes visible or fonts change the link dimensions.
+        const resizeObserver = new ResizeObserver(placeIndicator);
+        resizeObserver.observe(link);
+        resizeObserver.observe(link.parentElement!);
+        return () => {
+          resizeObserver.disconnect();
+          link.classList.remove("is-active");
+        };
       }
       // One tween at a time: a slow slide finishing after a quick fade-out
       // would leave a navy pill behind a navy (inactive) label.

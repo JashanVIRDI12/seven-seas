@@ -85,3 +85,49 @@ highway image. Current credits describe the set as AI-created illustrations.
 
 Evidence: `test-results/images/checks.json`,
 `test-results/images/production-checks.json`, and the adjacent screenshots.
+
+## Home-page statement redesign — October 3, 2026
+
+The former split-word image capsule is replaced with a static editorial
+spread: full workshop imagery, left-aligned headline, practical local copy,
+direct call action, and a link to `/how-it-works`. The component renders
+without client-side animation, so neither the words nor the image depends
+on scroll progress. Legacy statement animation and styles were removed.
+
+- Lint and production build (including TypeScript) passed.
+- Production browser checks passed at 1440, 1024, 768, 390, and 320px,
+  plus 844px landscape, reduced motion, and JavaScript disabled.
+- No image-loading errors, horizontal overflow, or page exceptions.
+- All seven scripted scenarios returned zero scoped axe WCAG A/AA
+  violations; the no-JavaScript scenario was checked visually and for
+  content, image loading, and link targets.
+- Both links have 56px touch targets. Keyboard focus has a visible
+  outline, the configured telephone is correct, and the process link
+  successfully navigates to `/how-it-works`.
+- The existing two desktop pins remain intact. An existing animated
+  call-panel overflow on tablets was contained with `overflow: clip`.
+
+Screenshots and results: `test-results/statement/verification.json` and
+the adjacent `*-final.png` files.
+
+## About introduction redesign — October 3, 2026
+
+The large highlighted paragraph and overlapping photographs were replaced
+with a dedicated server-rendered introduction: a two-line headline,
+supporting paragraphs, aligned workshop and detail photography, and a
+direct telephone action. Phone and tablet layouts stack with one photograph.
+
+- Lint and production build, including TypeScript, passed.
+- Production checks passed at 1440, 1024, 768, 390, and 320px, plus
+  844px landscape, reduced motion, and JavaScript disabled.
+- Both headline lines fit at every checked width. Visible photographs
+  loaded successfully, with no horizontal overflow or browser errors.
+- Seven scripted scenarios returned zero scoped axe WCAG A/AA violations;
+  the no-JavaScript scenario retained the full content and working link.
+- The telephone matches business configuration. Its button has a 56px
+  touch target and a visible keyboard focus outline.
+- Desktop, tablet, and phone crops and the section beneath the actual
+  fixed navigation were visually reviewed.
+
+Evidence: `test-results/about-intro/verification.json` and the adjacent
+`*-final.png` and `*-in-page.png` screenshots.

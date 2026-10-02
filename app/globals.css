@@ -958,58 +958,108 @@ html.motion-ok:has(.hero-mark) .site-header .wordmark-text {
   color: var(--red);
 }
 
-/* ----- Statement: the line that parts ------------------------------------ */
+/* ----- Statement: built around uptime ----------------------------------- */
 
-.statement {
-  text-align: center;
-}
-.split-lines {
-  display: flex;
-  flex-direction: column;
+.statement-grid {
+  display: grid;
   align-items: center;
-  color: var(--ink);
-  font-size: clamp(2rem, 9.4vw, 8.25rem);
+  gap: clamp(40px, 5.5vw, 88px);
+}
+.statement-copy {
+  min-width: 0;
+}
+.statement-title {
+  max-width: 100%;
+  font-size: clamp(3rem, 6.4vw, 6.5rem);
   font-weight: 780;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.035em;
   line-height: 0.96;
 }
-.sl-line {
+.statement-title span {
   display: block;
 }
-.sl-split {
+.statement-title-lead {
+  text-wrap: pretty;
+}
+.statement-body {
+  display: grid;
+  gap: 16px;
+  max-width: 43ch;
+  margin-top: clamp(28px, 3vw, 40px);
+  color: var(--steel);
+  font-size: clamp(1.0625rem, 1.3vw, 1.1875rem);
+  line-height: 1.6;
+}
+.statement-actions {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  gap: 0.16em;
+  gap: 12px;
+  margin-top: 28px;
 }
-.sl-l,
-.sl-r {
-  display: inline-block;
-}
-.sl-media {
+.statement-photo {
   position: relative;
-  display: block;
-  flex: none;
-  width: 2.5em;
-  height: 0.78em;
+  min-width: 0;
   overflow: hidden;
-  border-radius: 999px;
-  background: var(--paper-2);
+  border-radius: var(--r-frame);
+  background: var(--ink);
+  color: var(--white);
 }
-.sl-media img {
+.statement-photo-frame {
+  position: relative;
+  aspect-ratio: 6 / 5;
+  overflow: hidden;
+}
+.statement-photo-frame img {
   object-fit: cover;
 }
-.statement-foot {
-  display: grid;
-  justify-items: center;
-  gap: 28px;
-  max-width: 720px;
-  margin: clamp(40px, 5vw, 72px) auto 0;
+.statement-caption {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 24px;
+  padding: clamp(20px, 2.4vw, 32px);
+  border-top: 6px solid var(--red);
 }
-.statement-foot p {
-  color: var(--steel);
-  font-size: clamp(1.0625rem, 1.3vw, 1.25rem);
-  line-height: 1.55;
+.statement-caption p {
+  font-size: clamp(1.25rem, 1.8vw, 1.75rem);
+  font-weight: 650;
+  letter-spacing: -0.015em;
+  line-height: 1.2;
+}
+.statement-caption span {
+  color: var(--mist);
+  font-size: 0.9375rem;
+  line-height: 1.4;
+}
+@media (min-width: 900px) {
+  .statement-grid {
+    grid-template-columns: minmax(0, 1.04fr) minmax(0, 1fr);
+  }
+  .statement-photo-frame {
+    aspect-ratio: 1 / 1;
+  }
+}
+@media (min-width: 640px) and (max-width: 899px) {
+  .statement-title {
+    font-size: clamp(3.6rem, 8.7vw, 5rem);
+  }
+  .statement-photo-frame {
+    aspect-ratio: 3 / 2;
+  }
+}
+@media (max-width: 639px) {
+  .statement-title {
+    font-size: clamp(2.65rem, 12vw, 4rem);
+  }
+  .statement-actions {
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .statement-actions .btn {
+    max-width: 100%;
+  }
 }
 
 /* ----- Services: one rig, three cards ------------------------------------ */
@@ -2028,6 +2078,9 @@ a.bento-card:hover .icon-chip {
 
 /* ----- Call to action ----------------------------------------------------- */
 
+.cta {
+  overflow: clip;
+}
 .cta-panel {
   --inset: var(--gutter);
   --focus: #fff;
@@ -2495,10 +2548,7 @@ a.bento-card:hover .icon-chip {
   color: rgba(255, 255, 255, 0.78);
 }
 .site-header.on-dark:not(.is-solid) .nav-indicator {
-  background: #fff;
-}
-.site-header.on-dark:not(.is-solid) .nav-link.is-active {
-  color: var(--ink);
+  background: var(--ink);
 }
 .site-header.on-dark:not(.is-solid) .menu-toggle {
   background: #fff;
@@ -2861,6 +2911,114 @@ a.bento-card:hover .icon-chip {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+  }
+}
+
+/* About: clear words, working detail, and room for the photography. */
+.about-intro-head {
+  display: grid;
+  align-items: center;
+  gap: 28px;
+  margin-bottom: clamp(36px, 4.8vw, 68px);
+}
+.about-intro-title {
+  font-size: clamp(2rem, 9.5vw, 3.375rem);
+  font-weight: 760;
+  letter-spacing: -0.035em;
+  line-height: 0.98;
+}
+.about-intro-title span {
+  display: block;
+}
+.about-intro-copy {
+  display: grid;
+  gap: 16px;
+  max-width: 44ch;
+  color: var(--steel);
+  font-size: clamp(1.0625rem, 1.25vw, 1.1875rem);
+  line-height: 1.6;
+}
+.about-intro-gallery {
+  display: grid;
+  align-items: start;
+  gap: clamp(28px, 3.3vw, 48px);
+}
+.about-intro-main,
+.about-intro-detail {
+  min-width: 0;
+}
+.about-intro-main-photo,
+.about-intro-detail-photo {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  background: var(--paper-2);
+}
+.about-intro-main-photo {
+  aspect-ratio: 5 / 4;
+}
+.about-intro-main-photo img,
+.about-intro-detail-photo img {
+  object-fit: cover;
+}
+.about-intro-main figcaption {
+  padding-block: 16px;
+  border-bottom: 1px solid var(--line-strong);
+  color: var(--steel);
+  font-size: 0.9375rem;
+}
+.about-intro-detail-photo {
+  display: none;
+  aspect-ratio: 8 / 5;
+}
+.about-intro-next {
+  display: grid;
+  justify-items: start;
+  gap: 14px;
+}
+.about-intro-next h3 {
+  font-size: clamp(1.375rem, 2vw, 1.75rem);
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+.about-intro-next p {
+  max-width: 38ch;
+  color: var(--steel);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.about-intro-next .btn {
+  margin-top: 6px;
+}
+@media (min-width: 640px) and (max-width: 899px) {
+  .about-intro-title {
+    font-size: clamp(3.4rem, 8.2vw, 4.5rem);
+  }
+  .about-intro-copy {
+    max-width: 60ch;
+  }
+  .about-intro-main-photo {
+    aspect-ratio: 3 / 2;
+  }
+}
+@media (min-width: 900px) {
+  .about-intro-title {
+    font-size: clamp(2.375rem, 5.6vw, 5.5rem);
+  }
+  .about-intro-head {
+    grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr);
+    gap: clamp(40px, 5vw, 72px);
+  }
+  .about-intro-gallery {
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  }
+  .about-intro-main-photo {
+    aspect-ratio: 2 / 1;
+  }
+  .about-intro-detail-photo {
+    display: block;
+    margin-bottom: 24px;
   }
 }
 

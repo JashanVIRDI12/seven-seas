@@ -47,7 +47,7 @@ saturated blue (it vibrates), so the road on the blue section is ink.
 | Hero       | Photo card tilted back in 3D comes upright on scroll       | Aceternity / 21st.dev, Container Scroll    |
 | Hero       | "Keep the [north/fleet/freight/rig] moving." letter roll   | 21st.dev Flip Words, Text Roll             |
 | Ticker     | Two crossing tapes, velocity speed, direction and skew     | Framer University Ticker; Scroll Velocity  |
-| Statement  | "make [photo] money": the line parts to show a truck       | Framer text-image reveal                   |
+| Statement  | Uptime message beside a full workshop photograph; direct call and process links | Seven Sea repair-bay editorial spread |
 | Services   | One photo splits into three panels that flip to cards      | Framer University, 3D Image Split Scroll   |
 | Services   | Phones and tablets: sticky cards that sink as next arrives | 21st.dev Stacking Cards                    |
 | Diagnosis  | Lens over the truck shows the engine in a blueprint tint   | Framer University, X-Ray Hover Reveal      |
@@ -58,6 +58,17 @@ saturated blue (it vibrates), so the road on the blue section is ink.
 | Buttons    | Fill grows from the pointer's entry point; label roll      | Framer University directional hover        |
 | CTA        | Copy number with confirmation, for desk-based callers      | Framer University, Click to Copy           |
 | Footer     | Letters lift in a wave around the pointer                  | Framer University, Text Lift on Hover      |
+
+## Home-page statement
+
+The home-page uptime statement was redesigned on October 3, 2026 as a
+static spread: left-aligned oversized Bricolage type, concise local copy,
+a direct phone action and a link to the repair process, beside a complete
+workshop image. Navy anchors the photo caption and a red edge ties it to
+the truck and call button. Tablet and phone layouts stack deliberately;
+the photo's delivery sizes account for its cover crop. The section is a
+quiet reading moment after the moving tapes and remains complete without
+animation or JavaScript.
 
 ## Inner pages: services, about, how it works, contact
 
@@ -75,11 +86,18 @@ copy lives in `data/services.ts` and stays within verified facts.
 | ------------------ | --------------------------------------------------------------------------------------------------------- |
 | `/services`        | Photo hero with jump links; three service chapters (paper, navy, red); lettering cut from a photo; call panel |
 | `/services/[slug]` | Photo hero; statement with red marker underlines and a photo pair; "What to tell us" photo cards; mosaic with a red call tile; other services as photo cards; FAQ; call panel |
-| `/about`           | Photo hero; statement; facts band (rating, scope, place, coordinates); "How we work" photo cards; mosaic; call panel |
+| `/about`           | Photo hero; two-column introduction and aligned photography; facts band (rating, scope, place, coordinates); "How we work" photo cards; mosaic; call panel |
 | `/how-it-works`    | Photo hero; the four repair steps on a red-to-blue rail, each with a photograph and its practical piece (checklist, phone, address and directions, call); FAQ; call panel |
 | `/contact`         | Photo hero; call card with copy button; visit card with Google Maps; live Prince George clock with "call ahead" note; checklist; FAQ |
 
 Service slugs are statically generated; unknown slugs return 404.
+
+The About introduction uses a short two-line headline, readable supporting
+paragraphs, and a wide workshop photograph beside a smaller working detail.
+The phone action sits directly below the detail. Below 900px, the section
+stacks and the secondary photograph is omitted to keep the reading sequence
+focused. This server-rendered composition remains complete without animation
+or JavaScript; the shared highlighted statements on service pages are separate.
 
 ## Motion rules
 

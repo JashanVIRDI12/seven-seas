@@ -1,0 +1,230 @@
+[
+  {
+    "scenario": "desktop",
+    "status": 200,
+    "passed": true,
+    "overflow": false,
+    "heading": "Straight talk.\nHeavy-duty work.",
+    "headingLines": [
+      1,
+      1
+    ],
+    "photos": [
+      {
+        "loaded": true,
+        "alt": "Technician in navy workwear and safety glasses using a wrench beside the open hood of a red truck",
+        "webp": true
+      },
+      {
+        "loaded": true,
+        "alt": "A mechanic's worn hands inspecting a steel bolt over a workbench with a socket, washer, and shop rag",
+        "webp": true
+      }
+    ],
+    "href": "tel:+16393360003",
+    "targetHeight": 56,
+    "visible": true,
+    "axe": [],
+    "focus": {
+      "focused": true,
+      "visible": true
+    },
+    "errors": []
+  },
+  {
+    "scenario": "small-desktop",
+    "status": 200,
+    "passed": true,
+    "overflow": false,
+    "heading": "Straight talk.\nHeavy-duty work.",
+    "headingLines": [
+      1,
+      1
+    ],
+    "photos": [
+      {
+        "loaded": true,
+        "alt": "Technician in navy workwear and safety glasses using a wrench beside the open hood of a red truck",
+        "webp": true
+      },
+      {
+        "loaded": true,
+        "alt": "A mechanic's worn hands inspecting a steel bolt over a workbench with a socket, washer, and shop rag",
+        "webp": true
+      }
+    ],
+    "href": "tel:+16393360003",
+    "targetHeight": 56,
+    "visible": true,
+    "axe": [],
+    "focus": {
+      "focused": true,
+      "visible": true
+    },
+    "errors": []
+  },
+  {
+    "scenario": "tablet",
+    "status": 200,
+    "passed": true,
+    "overflow": false,
+    "heading": "Straight talk.\nHeavy-duty work.",
+    "headingLines": [
+      1,
+      1
+    ],
+    "photos": [
+      {
+        "loaded": true,
+        "alt": "Technician in navy workwear and safety glasses using a wrench beside the open hood of a red truck",
+        "webp": true
+      }
+    ],
+    "href": "tel:+16393360003",
+    "targetHeight": 56,
+    "visible": true,
+    "axe": [],
+    "focus": {
+      "focused": true,
+      "visible": true
+    },
+    "errors": []
+  },
+  {
+    "scenario": "mobile",
+    "status": 200,
+    "passed": true,
+    "overflow": false,
+    "heading": "Straight talk.\nHeavy-duty work.",
+    "headingLines": [
+      1,
+      1
+    ],
+    "photos": [
+      {
+        "loaded": true,
+        "alt": "Technician in navy workwear and safety glasses using a wrench beside the open hood of a red truck",
+        "webp": true
+      }
+    ],
+    "href": "tel:+16393360003",
+    "targetHeight": 56,
+    "visible": true,
+    "axe": [],
+    "focus": {
+      "focused": true,
+      "visible": true
+    },
+    "errors": []
+  },
+  {
+    "scenario": "small-mobile",
+    "status": 200,
+    "passed": true,
+    "overflow": false,
+    "heading": "Straight talk.\nHeavy-duty work.",
+    "headingLines": [
+      1,
+      1
+    ],
+    "photos": [
+      {
+        "loaded": true,
+        "alt": "Technician in navy workwear and safety glasses using a wrench beside the open hood of a red truck",
+        "webp": true
+      }
+    ],
+    "href": "tel:+16393360003",
+    "targetHeight": 56,
+    "visible": true,
+    "axe": [],
+    "focus": {
+      "focused": true,
+      "visible": true
+    },
+    "errors": []
+  },
+  {
+    "scenario": "landscape",
+    "status": 200,
+    "passed": true,
+    "overflow": false,
+    "heading": "Straight talk.\nHeavy-duty work.",
+    "headingLines": [
+      1,
+      1
+    ],
+    "photos": [
+      {
+        "loaded": true,
+        "alt": "Technician in navy workwear and safety glasses using a wrench beside the open hood of a red truck",
+        "webp": true
+      }
+    ],
+    "href": "tel:+16393360003",
+    "targetHeight": 56,
+    "visible": true,
+    "axe": [],
+    "focus": {
+      "focused": true,
+      "visible": true
+    },
+    "errors": []
+  },
+  {
+    "scenario": "reduced-motion",
+    "status": 200,
+    "passed": true,
+    "overflow": false,
+    "heading": "Straight talk.\nHeavy-duty work.",
+    "headingLines": [
+      1,
+      1
+    ],
+    "photos": [
+      {
+        "loaded": true,
+        "alt": "Technician in navy workwear and safety glasses using a wrench beside the open hood of a red truck",
+        "webp": true
+      },
+      {
+        "loaded": true,
+        "alt": "A mechanic's worn hands inspecting a steel bolt over a workbench with a socket, washer, and shop rag",
+        "webp": true
+      }
+    ],
+    "href": "tel:+16393360003",
+    "targetHeight": 56,
+    "visible": true,
+    "axe": [],
+    "focus": {
+      "focused": true,
+      "visible": true
+    },
+    "errors": []
+  },
+  {
+    "scenario": "no-javascript",
+    "status": 200,
+    "passed": true,
+    "overflow": false,
+    "heading": "Straight talk.\nHeavy-duty work.",
+    "headingLines": [
+      1,
+      1
+    ],
+    "photos": [
+      {
+        "loaded": true,
+        "alt": "Technician in navy workwear and safety glasses using a wrench beside the open hood of a red truck",
+        "webp": true
+      }
+    ],
+    "href": "tel:+16393360003",
+    "targetHeight": 56,
+    "visible": true,
+    "axe": null,
+    "focus": null,
+    "errors": []
+  }
+]

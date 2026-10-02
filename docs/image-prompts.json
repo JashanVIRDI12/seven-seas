@@ -11,8 +11,9 @@
       "prompt": "Use case: photorealistic-natural. Create an original, exceptionally detailed photographic-style website asset for a Canadian heavy-duty truck and trailer repair brand. Premium transport-magazine photography: natural daylight or specified practical lighting, honest work-worn materials, restrained white/navy/service-red palette, realistic scale and optical depth. Clear photographic detail, balanced exposure, true metal and rubber textures, believable truck geometry. No artificial HDR, oversharpening, orange/teal grade, cinematic fog, CGI/game-render appearance, plastic surfaces, invented brand markings, lettering, logos, watermarks, or collages. This is illustrative brand imagery, not documentation of an actual company or location. Produce a single high-resolution image; landscape assets aim for 3072 x 2048, wide assets 3072 x 1728, portrait assets 2048 x 3072.\nAsset: Highway freight. Framing: landscape, 3:2.\nScene: A white North American Class 8 conventional semi tractor pulling a white 53-foot box trailer rounds a gentle forest highway bend, photographed from the front-left roadside at normal eye height, 50mm lens, f/8. The nearest truck is centered slightly right, its complete front cab and both front tires visible in the upper and middle frame. Two smaller semis follow far behind in the same lane. Correct right-hand traffic, clean double-yellow centerline, realistic wheel axles and turning radius. Pine and spruce forest, rolling northern terrain without dramatic mountains, mild cool morning sunlight. The lower-left is uncluttered asphalt for website copy; the cab remains the focal point. Tiny road grime on wheels, credible chrome reflections, softly overcast sky only in top 15%. Crisp transport editorial photograph, not a glossy truck advertisement.",
       "width": 1536,
       "height": 1024,
-      "master": "assets/image-masters/convoy-v2.png",
-      "bytes": 329884
+      "master": "assets/image-masters/convoy-v2.webp",
+      "bytes": 329884,
+      "originalMaster": "assets/image-masters/convoy-v2.png"
     },
     {
       "id": "engine-detail",
@@ -22,8 +23,9 @@
       "prompt": "Use case: photorealistic-natural. Create an original, exceptionally detailed photographic-style website asset for a Canadian heavy-duty truck and trailer repair brand. Premium transport-magazine photography: natural daylight or specified practical lighting, honest work-worn materials, restrained white/navy/service-red palette, realistic scale and optical depth. Clear photographic detail, balanced exposure, true metal and rubber textures, believable truck geometry. No artificial HDR, oversharpening, orange/teal grade, cinematic fog, CGI/game-render appearance, plastic surfaces, invented brand markings, lettering, logos, watermarks, or collages. This is illustrative brand imagery, not documentation of an actual company or location. Produce a single high-resolution image; landscape assets aim for 3072 x 2048, wide assets 3072 x 1728, portrait assets 2048 x 3072.\nAsset: Diesel engine detail. Framing: wide, 16:9.\nScene: Close photographic inspection of a real-looking heavy-duty inline-six diesel truck engine: matte cast-metal turbo housing, thick black rubber charge-air hose, stainless hose clamps, orderly fuel lines, believable wiring loom and fasteners. Three-quarter side view at workshop bench height; one coherent assembly, not a jumble of random pipes. A worn service-red valve cover recedes behind a sharply rendered steel turbo and hose joint. Diffuse repair-bay window daylight with soft warm practical fill. 70mm lens, f/8, fine cast metal texture, restrained dirt and grease. No hands, no labels or brand lettering. Composition works as a wide mechanical-detail strip.",
       "width": 1672,
       "height": 941,
-      "master": "assets/image-masters/engine-detail-v2.png",
-      "bytes": 391764
+      "master": "assets/image-masters/engine-detail-v2.webp",
+      "bytes": 391764,
+      "originalMaster": "assets/image-masters/engine-detail-v2.png"
     },
     {
       "id": "kenworth",
@@ -33,8 +35,9 @@
       "prompt": "Use case: photorealistic-natural. Create an original, exceptionally detailed photographic-style website asset for a Canadian heavy-duty truck and trailer repair brand. Premium transport-magazine photography: natural daylight or specified practical lighting, honest work-worn materials, restrained white/navy/service-red palette, realistic scale and optical depth. Clear photographic detail, balanced exposure, true metal and rubber textures, believable truck geometry. No artificial HDR, oversharpening, orange/teal grade, cinematic fog, CGI/game-render appearance, plastic surfaces, invented brand markings, lettering, logos, watermarks, or collages. This is illustrative brand imagery, not documentation of an actual company or location. Produce a single high-resolution image; landscape assets aim for 3072 x 2048, wide assets 3072 x 1728, portrait assets 2048 x 3072.\nAsset: Heavy-duty tractor. Framing: landscape, 3:2.\nScene: A complete unbranded white long-hood North American Class 8 sleeper tractor, front-left three-quarter view, stationary on a modest paved industrial yard. Straight chrome grille, chrome bumper, two conventional front wheels, two rear tandem axles with dual tires, accurate sleeper cab and chassis, matched twin vertical exhaust stacks. Focal truck centered with space around every tire and bumper; no trailer. An understated gray repair-bay building and spruce trees in the background, no signage. Bright soft-overcast northern Canadian daylight, grounded tire contact shadows, realistic brushed chrome reflections, subtle road dust. 50mm lens, f/8. Handsome and dependable, with physically correct proportions; no fake badges or fabricated license-plate text.",
       "width": 1536,
       "height": 1024,
-      "master": "assets/image-masters/kenworth-v2.png",
-      "bytes": 264684
+      "master": "assets/image-masters/kenworth-v2.webp",
+      "bytes": 264684,
+      "originalMaster": "assets/image-masters/kenworth-v2.png"
     },
     {
       "id": "northern-road",
@@ -44,8 +47,9 @@
       "prompt": "Use case: photorealistic-natural. Create an original, exceptionally detailed photographic-style website asset for a Canadian heavy-duty truck and trailer repair brand. Premium transport-magazine photography: natural daylight or specified practical lighting, honest work-worn materials, restrained white/navy/service-red palette, realistic scale and optical depth. Clear photographic detail, balanced exposure, true metal and rubber textures, believable truck geometry. No artificial HDR, oversharpening, orange/teal grade, cinematic fog, CGI/game-render appearance, plastic surfaces, invented brand markings, lettering, logos, watermarks, or collages. This is illustrative brand imagery, not documentation of an actual company or location. Produce a single high-resolution image; landscape assets aim for 3072 x 2048, wide assets 3072 x 1728, portrait assets 2048 x 3072.\nAsset: Northern highway. Framing: wide, 16:9.\nScene: A working two-lane northern Canadian highway bends gently through dense spruce and lodgepole pine. Road occupies the lower half and leads into the upper-center distance. Correct double-yellow center markings, white shoulder lines, an understated galvanized guardrail on one side, patched asphalt and tiny roadside gravel. Low forested hills, no dramatic alpine peaks, no tourist vista, no signs or place names. Soft bright overcast daylight after light rain, restrained reflections, deep natural green and steel-gray asphalt, cloud detail. Roadside 50mm documentary photograph with clear near-to-far detail, plausible terrain and honest road geometry. No vehicles, no artificial mist.",
       "width": 1672,
       "height": 941,
-      "master": "assets/image-masters/northern-road-v2.png",
-      "bytes": 431404
+      "master": "assets/image-masters/northern-road-v2.webp",
+      "bytes": 431404,
+      "originalMaster": "assets/image-masters/northern-road-v2.png"
     },
     {
       "id": "workshop",
@@ -55,8 +59,9 @@
       "prompt": "Use case: photorealistic-natural. Create an original, exceptionally detailed photographic-style website asset for a Canadian heavy-duty truck and trailer repair brand. Premium transport-magazine photography: natural daylight or specified practical lighting, honest work-worn materials, restrained white/navy/service-red palette, realistic scale and optical depth. Clear photographic detail, balanced exposure, true metal and rubber textures, believable truck geometry. No artificial HDR, oversharpening, orange/teal grade, cinematic fog, CGI/game-render appearance, plastic surfaces, invented brand markings, lettering, logos, watermarks, or collages. This is illustrative brand imagery, not documentation of an actual company or location. Produce a single high-resolution image; landscape assets aim for 3072 x 2048, wide assets 3072 x 1728, portrait assets 2048 x 3072.\nAsset: Repair bay. Framing: landscape, 3:2.\nScene: Wide documentary view inside a modest well-maintained commercial truck repair bay. A service-red long-hood North American semi tractor sits at floor level with its one-piece hood tilted forward, exposing a credible diesel engine. The full truck front, steering wheels, and repair context are visible. One technician in worn navy workwear and safety glasses stands to the side, occupied with an ordinary service task, not posing. Gray corrugated walls, concrete floor with restrained use marks, organized red tool chest, practical hoses neatly at the bay edge. Large open bay door provides soft natural daylight, neutral shop lighting. 35mm lens with straight verticals, f/5.6. No truck suspended in midair, no fictional huge facility, no signs or text, no staged smiles.",
       "width": 1536,
       "height": 1024,
-      "master": "assets/image-masters/workshop-v2.png",
-      "bytes": 303902
+      "master": "assets/image-masters/workshop-v2.webp",
+      "bytes": 303902,
+      "originalMaster": "assets/image-masters/workshop-v2.png"
     },
     {
       "id": "mechanic-red",
@@ -66,8 +71,9 @@
       "prompt": "Use case: photorealistic-natural. Create an original, exceptionally detailed photographic-style website asset for a Canadian heavy-duty truck and trailer repair brand. Premium transport-magazine photography: natural daylight or specified practical lighting, honest work-worn materials, restrained white/navy/service-red palette, realistic scale and optical depth. Clear photographic detail, balanced exposure, true metal and rubber textures, believable truck geometry. No artificial HDR, oversharpening, orange/teal grade, cinematic fog, CGI/game-render appearance, plastic surfaces, invented brand markings, lettering, logos, watermarks, or collages. This is illustrative brand imagery, not documentation of an actual company or location. Produce a single high-resolution image; landscape assets aim for 3072 x 2048, wide assets 3072 x 1728, portrait assets 2048 x 3072.\nAsset: Technician at work. Framing: landscape, 3:2.\nScene: A candid waist-up to thigh-level photographic scene of an experienced middle-aged diesel technician in navy workwear and clear safety glasses beside the forward-open hood of a service-red North American semi. Technician sits slightly right of center in three-quarter profile, looking down at the engine, with one gloved hand steadying a metal hose fitting and the other holding a proper combination wrench. The red hood and exposed engine create a clean left-to-right composition, cab visible behind. Skin texture, short practical hair, worn cotton sleeves, natural shoulders and anatomically correct hands. Calm ordinary workshop daylight, 50mm lens, f/5.6, detailed equipment rather than heavy bokeh. No posed grin, no name patch, no logos, no extra fingers.",
       "width": 1536,
       "height": 1024,
-      "master": "assets/image-masters/mechanic-red-v2.png",
-      "bytes": 234016
+      "master": "assets/image-masters/mechanic-red-v2.webp",
+      "bytes": 234016,
+      "originalMaster": "assets/image-masters/mechanic-red-v2.png"
     },
     {
       "id": "truck-engine",
@@ -77,8 +83,9 @@
       "prompt": "Use case: photorealistic-natural. Create an original, exceptionally detailed photographic-style website asset for a Canadian heavy-duty truck and trailer repair brand. Premium transport-magazine photography: natural daylight or specified practical lighting, honest work-worn materials, restrained white/navy/service-red palette, realistic scale and optical depth. Clear photographic detail, balanced exposure, true metal and rubber textures, believable truck geometry. No artificial HDR, oversharpening, orange/teal grade, cinematic fog, CGI/game-render appearance, plastic surfaces, invented brand markings, lettering, logos, watermarks, or collages. This is illustrative brand imagery, not documentation of an actual company or location. Produce a single high-resolution image; landscape assets aim for 3072 x 2048, wide assets 3072 x 1728, portrait assets 2048 x 3072.\nAsset: Engine inspection. Framing: landscape, 3:2.\nScene: Close working view into the open engine bay of a conventional heavy-duty semi. A technician in navy workwear is only partially visible along the right edge; a single black-gloved hand uses a properly seated socket ratchet on a visible bracket bolt. Main subject is a coherent inline-six diesel engine with realistic hose routing, steel injection lines, air intake and fasteners. Slightly elevated 70mm perspective at f/8. Soft daylight from the open bay catches brushed metal and lightly dusty rubber; tool and connection are sharply legible. No face needed, no gratuitous loose parts, no unreadable brand text, no impossible fittings, no duplicated limbs.",
       "width": 1536,
       "height": 1024,
-      "master": "assets/image-masters/truck-engine-v2.png",
-      "bytes": 240578
+      "master": "assets/image-masters/truck-engine-v2.webp",
+      "bytes": 240578,
+      "originalMaster": "assets/image-masters/truck-engine-v2.png"
     },
     {
       "id": "wheel",
@@ -88,8 +95,9 @@
       "prompt": "Use case: photorealistic-natural. Create an original, exceptionally detailed photographic-style website asset for a Canadian heavy-duty truck and trailer repair brand. Premium transport-magazine photography: natural daylight or specified practical lighting, honest work-worn materials, restrained white/navy/service-red palette, realistic scale and optical depth. Clear photographic detail, balanced exposure, true metal and rubber textures, believable truck geometry. No artificial HDR, oversharpening, orange/teal grade, cinematic fog, CGI/game-render appearance, plastic surfaces, invented brand markings, lettering, logos, watermarks, or collages. This is illustrative brand imagery, not documentation of an actual company or location. Produce a single high-resolution image; landscape assets aim for 3072 x 2048, wide assets 3072 x 1728, portrait assets 2048 x 3072.\nAsset: Wheel and hub service. Framing: landscape, 3:2.\nScene: Documentary close-to-medium photograph of a commercial truck rear axle during wheel service. One outer wheel has been removed, revealing a heavy cast-metal hub with ten evenly spaced studs and a realistic brake drum; adjacent mounted dual tires give context. A navy-clad technician kneels at the right edge, wearing safety glasses and sturdy gloves, holding a pneumatic impact wrench aligned with a hub fastener. Truck is supported by a substantial axle stand on a level concrete workshop floor. Focus on hub, tool, and working hands, correctly scaled heavy equipment. 50mm f/8, neutral soft repair-bay daylight, modest use marks. No passenger-car disc brake, floating truck, decorative sparks, logos or text.",
       "width": 1536,
       "height": 1024,
-      "master": "assets/image-masters/wheel-v2.png",
-      "bytes": 240380
+      "master": "assets/image-masters/wheel-v2.webp",
+      "bytes": 240380,
+      "originalMaster": "assets/image-masters/wheel-v2.png"
     },
     {
       "id": "reefer",
@@ -99,8 +107,9 @@
       "prompt": "Use case: photorealistic-natural. Create an original, exceptionally detailed photographic-style website asset for a Canadian heavy-duty truck and trailer repair brand. Premium transport-magazine photography: natural daylight or specified practical lighting, honest work-worn materials, restrained white/navy/service-red palette, realistic scale and optical depth. Clear photographic detail, balanced exposure, true metal and rubber textures, believable truck geometry. No artificial HDR, oversharpening, orange/teal grade, cinematic fog, CGI/game-render appearance, plastic surfaces, invented brand markings, lettering, logos, watermarks, or collages. This is illustrative brand imagery, not documentation of an actual company or location. Produce a single high-resolution image; landscape assets aim for 3072 x 2048, wide assets 3072 x 1728, portrait assets 2048 x 3072.\nAsset: Trailer at dusk. Framing: landscape, 3:2.\nScene: A white North American conventional semi tractor coupled to a complete white 53-foot refrigerated trailer, parked at a quiet industrial transport depot at blue hour. Camera front-left three-quarter at normal eye height, 50mm lens, complete rig visible including front bumper and rear trailer tandem wheels. The refrigeration unit is naturally mounted at the trailer front; straight trailer geometry, reflective red-and-white safety tape, accurate axles. A few warm amber running lights and restrained warehouse practical lights, believable dusk exposure with a little fine sensor grain, not neon. Gray-blue sky, evergreen tree line, uncluttered asphalt foreground, no rain flare, no logos or markings.",
       "width": 1536,
       "height": 1024,
-      "master": "assets/image-masters/reefer-v2.png",
-      "bytes": 212758
+      "master": "assets/image-masters/reefer-v2.webp",
+      "bytes": 212758,
+      "originalMaster": "assets/image-masters/reefer-v2.png"
     },
     {
       "id": "winter",
@@ -110,8 +119,9 @@
       "prompt": "Use case: photorealistic-natural. Create an original, exceptionally detailed photographic-style website asset for a Canadian heavy-duty truck and trailer repair brand. Premium transport-magazine photography: natural daylight or specified practical lighting, honest work-worn materials, restrained white/navy/service-red palette, realistic scale and optical depth. Clear photographic detail, balanced exposure, true metal and rubber textures, believable truck geometry. No artificial HDR, oversharpening, orange/teal grade, cinematic fog, CGI/game-render appearance, plastic surfaces, invented brand markings, lettering, logos, watermarks, or collages. This is illustrative brand imagery, not documentation of an actual company or location. Produce a single high-resolution image; landscape assets aim for 3072 x 2048, wide assets 3072 x 1728, portrait assets 2048 x 3072.\nAsset: Winter reliability. Framing: landscape, 3:2.\nScene: A white conventional North American semi with subtle navy lower trim pulls a white dry-van trailer along a cleared two-lane northern Canadian forest highway in winter. Front-left roadside photographic view, truck centered slightly right with the entire front cab and steering tires visible. Snow lies on shoulders and spruce branches; the driven pavement is mostly dark with ordinary wet slush at the edges, correct yellow/white lane markings. Bright diffuse winter daylight, pale gray sky, soft vehicle contact shadows, no blizzard, no snow particles, no dramatic mountain scenery. Accurate wheels and trailer length, moderate winter road grime. 70mm lens f/8, natural texture and crisp details.",
       "width": 1536,
       "height": 1024,
-      "master": "assets/image-masters/winter-v2.png",
-      "bytes": 364566
+      "master": "assets/image-masters/winter-v2.webp",
+      "bytes": 364566,
+      "originalMaster": "assets/image-masters/winter-v2.png"
     },
     {
       "id": "sparks",
@@ -121,8 +131,9 @@
       "prompt": "Use case: photorealistic-natural. Create an original, exceptionally detailed photographic-style website asset for a Canadian heavy-duty truck and trailer repair brand. Premium transport-magazine photography: natural daylight or specified practical lighting, honest work-worn materials, restrained white/navy/service-red palette, realistic scale and optical depth. Clear photographic detail, balanced exposure, true metal and rubber textures, believable truck geometry. No artificial HDR, oversharpening, orange/teal grade, cinematic fog, CGI/game-render appearance, plastic surfaces, invented brand markings, lettering, logos, watermarks, or collages. This is illustrative brand imagery, not documentation of an actual company or location. Produce a single high-resolution image; landscape assets aim for 3072 x 2048, wide assets 3072 x 1728, portrait assets 2048 x 3072.\nAsset: Trailer fabrication detail. Framing: portrait, 2:3.\nScene: Vertical documentary photograph of a technician's gloved hands holding an angle grinder against a steel trailer-frame crossmember securely clamped on a practical workshop bench. Tool has a proper guard; grinding disc meets steel at one clear point, throwing a restrained fan of small warm golden sparks toward the lower-right. Navy work sleeve, sturdy brown protective gloves, authentic thick structural steel and weld texture. Tight frame excludes face and focuses on task and correct tool geometry. Neutral shop light with window daylight, 70mm f/5.6. Sparks look photographic with varied short trajectories, not a fire explosion; no glowing fantasy, no logos, no extra fingers.",
       "width": 1024,
       "height": 1536,
-      "master": "assets/image-masters/sparks-v2.png",
-      "bytes": 233716
+      "master": "assets/image-masters/sparks-v2.webp",
+      "bytes": 233716,
+      "originalMaster": "assets/image-masters/sparks-v2.png"
     },
     {
       "id": "truck-row",
@@ -132,8 +143,9 @@
       "prompt": "Use case: photorealistic-natural. Create an original, exceptionally detailed photographic-style website asset for a Canadian heavy-duty truck and trailer repair brand. Premium transport-magazine photography: natural daylight or specified practical lighting, honest work-worn materials, restrained white/navy/service-red palette, realistic scale and optical depth. Clear photographic detail, balanced exposure, true metal and rubber textures, believable truck geometry. No artificial HDR, oversharpening, orange/teal grade, cinematic fog, CGI/game-render appearance, plastic surfaces, invented brand markings, lettering, logos, watermarks, or collages. This is illustrative brand imagery, not documentation of an actual company or location. Produce a single high-resolution image; landscape assets aim for 3072 x 2048, wide assets 3072 x 1728, portrait assets 2048 x 3072.\nAsset: Fleet equipment. Framing: wide, 16:9.\nScene: Four complete North American Class 8 conventional tractors parked in an orderly diagonal row at a modest transport yard, photographed from eye height at the front-left of the row. Nearest truck is white, second deep service-blue, third white, last restrained service-red. Coherent truck family and physically correct axle/wheel geometry, each a separate vehicle with space between, no merged mirrors or repeated artifacts. Gray asphalt with realistic faint tire scuffs, spruce tree line and understated warehouse behind, no text or signage. Clean soft-overcast morning light, 50mm lens f/8, sharp foreground and gently receding detail. Strong industrial geometry without looking like a glossy showroom.",
       "width": 1672,
       "height": 941,
-      "master": "assets/image-masters/truck-row-v2.png",
-      "bytes": 314640
+      "master": "assets/image-masters/truck-row-v2.webp",
+      "bytes": 314640,
+      "originalMaster": "assets/image-masters/truck-row-v2.png"
     },
     {
       "id": "fleet-yard",
@@ -143,8 +155,9 @@
       "prompt": "Use case: photorealistic-natural. Create an original, exceptionally detailed photographic-style website asset for a Canadian heavy-duty truck and trailer repair brand. Premium transport-magazine photography: natural daylight or specified practical lighting, honest work-worn materials, restrained white/navy/service-red palette, realistic scale and optical depth. Clear photographic detail, balanced exposure, true metal and rubber textures, believable truck geometry. No artificial HDR, oversharpening, orange/teal grade, cinematic fog, CGI/game-render appearance, plastic surfaces, invented brand markings, lettering, logos, watermarks, or collages. This is illustrative brand imagery, not documentation of an actual company or location. Produce a single high-resolution image; landscape assets aim for 3072 x 2048, wide assets 3072 x 1728, portrait assets 2048 x 3072.\nAsset: Fleet yard. Framing: wide, 16:9.\nScene: Elevated oblique photograph from about 10 meters high of a modest northern Canadian commercial transport and maintenance yard. Three gray repair-bay doors on a single-story practical building, four North American semi tractors and three white freight trailers arranged with believable maneuvering clearances on a paved yard. Vehicles are distinct, correct scale and trailer axles, not an enormous fictional company facility. A spruce tree belt and low rolling forested terrain beyond. Soft clear late-morning daylight, natural neutral color, fine asphalt and corrugated-metal detail, 50mm-like perspective without extreme aerial distortion. No people, no signs, no words, no logos, no fabricated identifiable business.",
       "width": 1672,
       "height": 941,
-      "master": "assets/image-masters/fleet-yard-v2.png",
-      "bytes": 279988
+      "master": "assets/image-masters/fleet-yard-v2.webp",
+      "bytes": 279988,
+      "originalMaster": "assets/image-masters/fleet-yard-v2.png"
     },
     {
       "id": "hands",
@@ -154,8 +167,9 @@
       "prompt": "Use case: photorealistic-natural. Create an original, exceptionally detailed photographic-style website asset for a Canadian heavy-duty truck and trailer repair brand. Premium transport-magazine photography: natural daylight or specified practical lighting, honest work-worn materials, restrained white/navy/service-red palette, realistic scale and optical depth. Clear photographic detail, balanced exposure, true metal and rubber textures, believable truck geometry. No artificial HDR, oversharpening, orange/teal grade, cinematic fog, CGI/game-render appearance, plastic surfaces, invented brand markings, lettering, logos, watermarks, or collages. This is illustrative brand imagery, not documentation of an actual company or location. Produce a single high-resolution image; landscape assets aim for 3072 x 2048, wide assets 3072 x 1728, portrait assets 2048 x 3072.\nAsset: Working hands. Framing: landscape, 3:2.\nScene: A candid photographic close-up of two adult mechanic's work-worn hands inspecting a single clean steel fastener above a heavy gray workbench. One thumb and forefinger hold the fastener naturally, the other hand steadies a cotton shop rag, fingers relaxed and anatomically correct; crop includes wrists in navy cotton sleeves, no face. Restrained grease around nails and fine skin creases, natural ordinary working hands, not grotesquely filthy. A socket and used metal washer rest softly out of focus on the bench. Soft workshop window light from upper-left, 85mm lens f/5.6, tactile metal and skin detail. No extra fingers, fused hands, logos or text.",
       "width": 1536,
       "height": 1024,
-      "master": "assets/image-masters/hands-v2.png",
-      "bytes": 187968
+      "master": "assets/image-masters/hands-v2.webp",
+      "bytes": 187968,
+      "originalMaster": "assets/image-masters/hands-v2.png"
     },
     {
       "id": "wrenches",
@@ -165,8 +179,9 @@
       "prompt": "Use case: photorealistic-natural. Create an original, exceptionally detailed photographic-style website asset for a Canadian heavy-duty truck and trailer repair brand. Premium transport-magazine photography: natural daylight or specified practical lighting, honest work-worn materials, restrained white/navy/service-red palette, realistic scale and optical depth. Clear photographic detail, balanced exposure, true metal and rubber textures, believable truck geometry. No artificial HDR, oversharpening, orange/teal grade, cinematic fog, CGI/game-render appearance, plastic surfaces, invented brand markings, lettering, logos, watermarks, or collages. This is illustrative brand imagery, not documentation of an actual company or location. Produce a single high-resolution image; landscape assets aim for 3072 x 2048, wide assets 3072 x 1728, portrait assets 2048 x 3072.\nAsset: Heavy workshop tools. Framing: landscape, 3:2.\nScene: Overhead editorial photograph of three substantial metric combination wrenches and one socket ratchet resting on a worn neutral-gray steel workshop bench. Tools placed with a practical loose alignment, no artificial perfect pattern. Clearly formed open ends and closed ring ends, realistic polished/used forged steel, subtle scratches and a navy cotton shop rag at one edge. Soft directional daylight makes restrained reflections, gentle shadows, all principal tools in sharp focus at f/8. A little generous unoccupied bench surface, real heavy-duty scale. No brand logos, size lettering, props beyond these tools, decorative grunge, CGI metal or impossible wrench geometry.",
       "width": 1536,
       "height": 1024,
-      "master": "assets/image-masters/wrenches-v2.png",
-      "bytes": 468640
+      "master": "assets/image-masters/wrenches-v2.webp",
+      "bytes": 468640,
+      "originalMaster": "assets/image-masters/wrenches-v2.png"
     },
     {
       "id": "cylinder-head",
@@ -176,8 +191,9 @@
       "prompt": "Use case: photorealistic-natural. Create an original, exceptionally detailed photographic-style website asset for a Canadian heavy-duty truck and trailer repair brand. Premium transport-magazine photography: natural daylight or specified practical lighting, honest work-worn materials, restrained white/navy/service-red palette, realistic scale and optical depth. Clear photographic detail, balanced exposure, true metal and rubber textures, believable truck geometry. No artificial HDR, oversharpening, orange/teal grade, cinematic fog, CGI/game-render appearance, plastic surfaces, invented brand markings, lettering, logos, watermarks, or collages. This is illustrative brand imagery, not documentation of an actual company or location. Produce a single high-resolution image; landscape assets aim for 3072 x 2048, wide assets 3072 x 1728, portrait assets 2048 x 3072.\nAsset: Cylinder-head work. Framing: portrait, 2:3.\nScene: Vertical close documentary photograph of a heavy-duty inline-six diesel cylinder head on a steel workshop bench. Coherent rows of valve springs and machined metal surfaces run diagonally up the image; correct repeated valve geometry rather than random gears. One black-gloved hand at upper-right uses a socket wrench on a visible fastener, with a navy work sleeve entering naturally from the edge. Soft window daylight, cast iron with restrained oil traces, highly legible machining texture and tool contact, 85mm lens f/8. No face, no brand text, no loose fantasy engine pieces, no duplicated fingers, no exaggerated grease.",
       "width": 1024,
       "height": 1536,
-      "master": "assets/image-masters/cylinder-head-v2.png",
-      "bytes": 297388
+      "master": "assets/image-masters/cylinder-head-v2.webp",
+      "bytes": 297388,
+      "originalMaster": "assets/image-masters/cylinder-head-v2.png"
     }
   ]
 }
