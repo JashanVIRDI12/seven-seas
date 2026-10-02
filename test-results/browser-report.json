@@ -1,0 +1,244 @@
+[
+  {
+    "name": "desktop",
+    "width": 1440,
+    "height": 1000,
+    "overflow": false,
+    "pins": 2,
+    "violations": [],
+    "errors": []
+  },
+  {
+    "name": "desktop-900",
+    "width": 1440,
+    "height": 900,
+    "overflow": false,
+    "pins": 2,
+    "violations": [],
+    "errors": []
+  },
+  {
+    "name": "short-desktop",
+    "width": 1280,
+    "height": 720,
+    "overflow": false,
+    "pins": 2,
+    "violations": [],
+    "errors": []
+  },
+  {
+    "name": "tablet-landscape",
+    "width": 1024,
+    "height": 768,
+    "overflow": false,
+    "pins": 2,
+    "violations": [],
+    "errors": []
+  },
+  {
+    "name": "tablet",
+    "width": 768,
+    "height": 1024,
+    "overflow": false,
+    "pins": 0,
+    "violations": [],
+    "errors": []
+  },
+  {
+    "name": "mobile",
+    "width": 390,
+    "height": 844,
+    "overflow": false,
+    "pins": 0,
+    "violations": [],
+    "errors": []
+  },
+  {
+    "name": "small-mobile",
+    "width": 360,
+    "height": 800,
+    "overflow": false,
+    "pins": 0,
+    "violations": [],
+    "errors": []
+  },
+  {
+    "name": "narrow-mobile",
+    "width": 320,
+    "height": 640,
+    "overflow": false,
+    "pins": 0,
+    "violations": [],
+    "errors": []
+  },
+  {
+    "name": "reduced-motion",
+    "width": 1440,
+    "height": 1000,
+    "overflow": false,
+    "pins": 0,
+    "violations": [],
+    "errors": []
+  },
+  {
+    "name": "no-javascript",
+    "width": 390,
+    "height": 844,
+    "overflow": false,
+    "pins": 0,
+    "violations": [],
+    "errors": []
+  },
+  {
+    "path": "/privacy",
+    "violations": []
+  },
+  {
+    "path": "/terms",
+    "violations": []
+  },
+  {
+    "path": "/photo-credits",
+    "violations": []
+  },
+  {
+    "path": "desktop /services",
+    "errors": [],
+    "violations": []
+  },
+  {
+    "path": "desktop /services/truck-repair",
+    "errors": [],
+    "violations": []
+  },
+  {
+    "path": "desktop /services/trailer-repair",
+    "errors": [],
+    "violations": []
+  },
+  {
+    "path": "desktop /services/fleets",
+    "errors": [],
+    "violations": []
+  },
+  {
+    "path": "desktop /about",
+    "errors": [],
+    "violations": []
+  },
+  {
+    "path": "desktop /how-it-works",
+    "errors": [],
+    "violations": []
+  },
+  {
+    "path": "desktop /contact",
+    "errors": [],
+    "violations": []
+  },
+  {
+    "path": "mobile /services",
+    "errors": [],
+    "violations": []
+  },
+  {
+    "path": "mobile /services/truck-repair",
+    "errors": [],
+    "violations": []
+  },
+  {
+    "path": "mobile /services/trailer-repair",
+    "errors": [],
+    "violations": []
+  },
+  {
+    "path": "mobile /services/fleets",
+    "errors": [],
+    "violations": []
+  },
+  {
+    "path": "mobile /about",
+    "errors": [],
+    "violations": []
+  },
+  {
+    "path": "mobile /how-it-works",
+    "errors": [],
+    "violations": []
+  },
+  {
+    "path": "mobile /contact",
+    "errors": [],
+    "violations": []
+  },
+  {
+    "path": "narrow /services",
+    "errors": [],
+    "violations": []
+  },
+  {
+    "path": "narrow /services/truck-repair",
+    "errors": [],
+    "violations": []
+  },
+  {
+    "path": "narrow /services/trailer-repair",
+    "errors": [],
+    "violations": []
+  },
+  {
+    "path": "narrow /services/fleets",
+    "errors": [],
+    "violations": []
+  },
+  {
+    "path": "narrow /about",
+    "errors": [],
+    "violations": []
+  },
+  {
+    "path": "narrow /how-it-works",
+    "errors": [],
+    "violations": []
+  },
+  {
+    "path": "narrow /contact",
+    "errors": [],
+    "violations": []
+  },
+  {
+    "path": "reduced /services",
+    "errors": [],
+    "violations": []
+  },
+  {
+    "path": "reduced /services/truck-repair",
+    "errors": [],
+    "violations": []
+  },
+  {
+    "path": "reduced /services/trailer-repair",
+    "errors": [],
+    "violations": []
+  },
+  {
+    "path": "reduced /services/fleets",
+    "errors": [],
+    "violations": []
+  },
+  {
+    "path": "reduced /about",
+    "errors": [],
+    "violations": []
+  },
+  {
+    "path": "reduced /how-it-works",
+    "errors": [],
+    "violations": []
+  },
+  {
+    "path": "reduced /contact",
+    "errors": [],
+    "violations": []
+  }
+]
