@@ -66,7 +66,7 @@ export function CallToAction() {
       <div className="cta-panel">
         <div className="container">
           <RevealHeading id="cta-title" className="cta-title">
-            Truck down? Let’s get you moving.
+            Need Help? Let’s Talk
           </RevealHeading>
           <div className="cta-row">
             <div className="cta-phone-wrap">
@@ -104,7 +104,7 @@ export function CallToAction() {
               Get directions
               <ArrowUpRight />
             </a>
-            <p>Tell us where you are and what you need.</p>
+            <p>Tell us what’s wrong with your truck or trailer. We’ll help you plan the next step.</p>
           </div>
         </div>
       </div>

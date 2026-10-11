@@ -56,14 +56,15 @@ export function ServiceChapter({
         </div>
         <div className="ch-copy">
           <RevealHeading id={`ch-${service.slug}`} className="ch-title">
-            {service.title}
+            {service.listing.title}
           </RevealHeading>
-          <p className="ch-lede">{service.lede}</p>
+          <h3 className="ch-headline">{service.listing.headline}</h3>
+          <p className="ch-lede">{service.listing.description}</p>
           <div className="ch-tells">
-            <p className="ch-tells-label">Have this ready when you call</p>
+            <p className="ch-tells-label">{service.listing.checklistTitle}</p>
             <ul>
-              {service.tellUs.map((item) => (
-                <li key={item.field}>{item.title}</li>
+              {service.listing.checklist.map((item) => (
+                <li key={item}>{item}</li>
               ))}
             </ul>
           </div>
@@ -73,11 +74,11 @@ export function ServiceChapter({
               variant={tone === "red" ? "white" : "red"}
               icon={<ArrowUpRight />}
             >
-              {`Explore ${service.word.toLowerCase()}`}
+              {service.listing.explore}
             </Button>
             <a className="ch-call" href={business.phoneHref}>
               <PhoneIcon />
-              {service.action}
+              {service.listing.action}
             </a>
           </div>
         </div>

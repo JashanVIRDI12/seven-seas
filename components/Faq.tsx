@@ -19,10 +19,14 @@ import { PhoneIcon, PlusIcon } from "./Icons";
  */
 export function Faq({
   items = homeFaqs,
-  title = "Before you call",
+  title = "Have Questions? Start Here.",
+  lede = "Need to discuss a specific repair? Call our shop with your truck or trailer details.",
+  action = "Talk to Our Team",
 }: {
   items?: readonly { question: string; answer: string }[];
   title?: string;
+  lede?: string;
+  action?: string;
 } = {}) {
   const root = useRef<HTMLElement>(null);
   const { contextSafe } = useGSAP({ scope: root });
@@ -82,9 +86,9 @@ export function Faq({
             {title}
           </RevealHeading>
           <div className="faq-help">
-            <p>Still have a question? The fastest answer is a phone call.</p>
+            <p>{lede}</p>
             <Button href={business.phoneHref} icon={<PhoneIcon />}>
-              {business.phoneDisplay}
+              {action}
             </Button>
           </div>
         </div>

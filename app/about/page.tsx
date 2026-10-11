@@ -13,7 +13,7 @@ import { ArrowUpRight, PhoneIcon } from "@/components/Icons";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Seven Sea Truck & Trailer Repair Ltd. is a heavy-duty truck and trailer repair shop in Prince George, BC, built around getting you back on the road.",
+    "We’re a heavy-duty truck and trailer repair shop in Prince George, BC, serving owner-operators and fleets. Our work starts with understanding your equipment, the problem and what you need to get back to business.",
   alternates: { canonical: canonical("/about") },
 };
 
@@ -23,15 +23,15 @@ export default function AboutPage() {
       <PhotoHero
         photo="winter"
         crumbs={[{ label: "Home", href: "/" }, { label: "About" }]}
-        title="About Seven Sea"
-        lede="A heavy-duty truck and trailer repair shop in Prince George, built around one job: getting you back on the road."
+        title="Get to Know Seven Sea"
+        lede="We’re a heavy-duty truck and trailer repair shop in Prince George, BC, serving owner-operators and fleets. Our work starts with understanding your equipment, the problem and what you need to get back to business."
         actions={
           <>
             <Button href={business.phoneHref} icon={<PhoneIcon />}>
-              Call the shop
+              Talk to Our Team
             </Button>
             <Button href="/services" variant="glass" icon={<ArrowUpRight />}>
-              Our services
+              Explore Our Services
             </Button>
           </>
         }
@@ -43,39 +43,39 @@ export default function AboutPage() {
 
       <PhotoCards
         id="how-title"
-        title="How we work"
-        lede="What matters to us, from the first call to the road."
+        title="What You Can Expect From Us"
+        lede="A straightforward approach to repairs, with attention to your equipment and the business behind it."
         items={[
           {
             photo: "convoy",
-            label: "The job",
-            title: "Back on the road",
-            text: "Every repair is measured by one thing: your truck or trailer moving again.",
+            label: "",
+            title: "Our Focus",
+            text: "Your truck and trailer have a job to do. Our focus is on addressing the repair needs that stand in the way.",
           },
           {
             photo: "mechanicRed",
-            label: "The first step",
-            title: "A real conversation",
-            text: "Call, describe what’s happening, and we’ll tell you whether it’s work we can take on.",
+            label: "",
+            title: "Our Approach",
+            text: "You know how your equipment normally runs. What you’ve noticed helps us understand the concern and discuss the work needed.",
           },
           {
             photo: "fleetYard",
-            label: "Who we work with",
-            title: "One truck or a fleet",
-            text: "Owner-operators and fleet coordinators start the same way: a call about the work.",
+            label: "",
+            title: "Our Customers",
+            text: "We work with owner-operators and fleet managers, giving attention to each truck or trailer and its role in your operation.",
           },
           {
             photo: "kenworth",
-            label: "Where",
-            title: "Prince George, BC",
-            text: `Our shop is at ${business.address}, on the roads that keep Northern BC moving.`,
+            label: "",
+            title: "Our Home",
+            text: "Seven Sea serves heavy-duty truck and trailer operators in Prince George, BC. Contact our local shop to discuss your repair needs.",
           },
         ]}
       />
 
       <Mosaic
         keys={["workshop", "wheel", "sparks", "winter"]}
-        line="Truck down? Start with a call."
+        line="Got A Problem? We Have A Solution."
       />
       <CallToAction />
     </main>

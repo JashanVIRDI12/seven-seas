@@ -206,12 +206,12 @@ export function Process() {
       <div className="process-pin">
         <div className="container process-head">
           <RevealHeading id="process-title" className="display">
-            The road back
+            From First Call to Final Repair.
           </RevealHeading>
           <div className="process-aside">
             <p className="section-lede">
-              From a stopped truck to a moving one. This is how a repair with
-              Seven Sea goes.
+              Know what comes next. Here’s how to arrange your truck or trailer
+              repair with Seven Sea.
             </p>
             <p className="process-count" aria-hidden="true">
               <span className="process-count-current">01</span>

@@ -1,24 +1,14 @@
-import { business } from "./business";
 import type { PhotoKey } from "./photos";
 
-/**
- * Service pages. Truck and trailer repair are the verified repair
- * categories; the fleet page describes who we work with, not extra work.
- * Nothing here claims a capability, price, hour or turnaround that has not
- * been confirmed: specifics are always settled on the phone.
- *
- * In `highlight`, [[double brackets]] mark the phrases the scroll
- * highlighter sweeps over.
- */
-
+// Website copy supplied in Seven Sea Website Content.pdf.
 export type ServiceSlug = "truck-repair" | "trailer-repair" | "fleets";
 
 export type Service = {
   slug: ServiceSlug;
   title: string;
-  /** The giant outlined word that runs behind the chapter. */
   word: string;
   menuLine: string;
+  heroTitle: string;
   metaDescription: string;
   lede: string;
   highlight: string;
@@ -26,192 +16,324 @@ export type Service = {
   sticker: string;
   hero: PhotoKey;
   inset: PhotoKey;
-  /** The pair beside the highlighted statement. */
   statement: [PhotoKey, PhotoKey];
+  cardsTitle: string;
+  cardsLede: string;
   tellUs: { field: string; title: string; text: string; photo: PhotoKey }[];
   gallery: [PhotoKey, PhotoKey, PhotoKey, PhotoKey];
+  faqTitle: string;
+  faqLede: string;
+  faqAction: string;
   faqs: { question: string; answer: string }[];
-};
-
-const callAhead = {
-  question: "Can I bring it in without calling first?",
-  answer:
-    "Please call ahead. We’ll confirm hours and arrange a time to bring it in.",
-};
-const noQuotes = {
-  question: "Can I get a quote on the website?",
-  answer:
-    "No. The website doesn’t give quotes or take bookings. Call the shop to talk through the work.",
-};
-const where = {
-  question: "Where is the shop?",
-  answer: `${business.address}, ${business.city}, ${business.provinceCode} ${business.postalCode}.`,
+  listing: {
+    title: string;
+    headline: string;
+    description: string;
+    checklistTitle: string;
+    checklist: string[];
+    explore: string;
+    action: string;
+  };
 };
 
 export const services: Service[] = [
   {
-    slug: "truck-repair",
-    title: "Truck repair",
-    word: "Trucks",
-    menuLine: "Heavy-duty trucks",
-    metaDescription:
-      "Heavy-duty truck repair at Seven Sea in Prince George, BC. Call to talk through what your truck is doing and arrange a time to bring it in.",
-    lede: "Heavy-duty truck repair at our shop on Trygg Court in Prince George. Tell us what the truck is doing and we’ll talk through the next step.",
-    highlight:
-      "A truck that isn’t moving isn’t earning. [[The fastest way]] to get yours looked at is [[a phone call]]: describe what’s happening, and we’ll talk through [[whether we can take it on]] and [[when you can bring it in]].",
-    action: "Call about a truck",
-    sticker: "Call first, then bring it in",
-    hero: "mechanicRed",
-    inset: "truckEngine",
-    statement: ["cylinderHead", "hands"],
-    tellUs: [
-      {
-        field: "Unit",
-        title: "The truck",
-        text: "Make, model and year, plus anything you already know about its history.",
-        photo: "kenworth",
-      },
-      {
-        field: "Problem",
-        title: "What it’s doing",
-        text: "Warning lights, codes, noises, leaks or a truck that won’t start. Describe it the way you’d tell someone standing beside it.",
-        photo: "truckEngine",
-      },
-      {
-        field: "Location",
-        title: "Where it is now",
-        text: "At your yard, on the highway or already in town. We’ll talk through getting it to the shop.",
-        photo: "winter",
-      },
-      {
-        field: "Timing",
-        title: "When you need it back",
-        text: "A load waiting tomorrow, or planned work ahead of a busy stretch.",
-        photo: "convoy",
-      },
+    "slug": "truck-repair",
+    "title": "Truck Repair",
+    "word": "Trucks",
+    "menuLine": "Heavy-Duty Truck Repair",
+    "heroTitle": "Your Next Haul Matters.",
+    "lede": "When your truck needs attention, your business feels it. Seven Sea provides heavy-duty truck repair in Prince George, BC. Tell us what’s wrong, and let’s arrange your visit to the shop.",
+    "highlight": "You know your truck. You notice when it sounds different, loses power or doesn’t feel right on the road. At Seven Sea, that’s where the conversation starts. Tell us what’s changed, and we’ll help you arrange a time to have it checked. Your truck is how you make a living. Getting it repaired matters.",
+    "action": "Call for Truck Repair",
+    "sticker": "Your Next Haul Matters.",
+    "hero": "mechanicRed",
+    "inset": "truckEngine",
+    "statement": [
+      "cylinderHead",
+      "hands"
     ],
-    gallery: ["workshop", "wheel", "sparks", "winter"],
-    faqs: [
-      callAhead,
+    "cardsTitle": "What We Need From You",
+    "cardsLede": "A few details help us understand the problem and plan your visit. Share what you know. You don’t need to diagnose it yourself.",
+    "tellUs": [
       {
-        question: "What if I’m not sure what’s wrong?",
-        answer:
-          "That’s fine. Describe what you’re noticing and we’ll talk you through the next step.",
+        "field": "",
+        "title": "Truck Details",
+        "text": "Tell us the make, model, and year. Mention any recent repairs or previous issues that might be relevant.",
+        "photo": "kenworth"
       },
-      noQuotes,
-      where,
+      {
+        "field": "",
+        "title": "The Issue",
+        "text": "Describe the noise, leak, warning light, or change in performance. Let us know when it started and when it happens.",
+        "photo": "truckEngine"
+      },
+      {
+        "field": "Location",
+        "title": "Where Your Truck Is",
+        "text": "Let us know if it’s at your yard, in town or stopped along your route, and whether you’ve arranged to bring it in.",
+        "photo": "winter"
+      },
+      {
+        "field": "",
+        "title": "Your Schedule",
+        "text": "Have a load booked or a deadline coming up? Tell us your timeline so we can discuss availability and plan accordingly.",
+        "photo": "convoy"
+      }
     ],
+    "gallery": [
+      "workshop",
+      "wheel",
+      "sparks",
+      "winter"
+    ],
+    "faqTitle": "Truck Repair Questions, Answered.",
+    "faqLede": "Have a question about your truck? Call Seven Sea to discuss the problem and arrange your visit.",
+    "faqAction": "Call the Shop",
+    "faqs": [
+      {
+        "question": "Should I call before bringing my truck in?",
+        "answer": "Please call first to discuss the issue and check shop availability. Have your truck’s make, model and year ready, along with a brief description of the problem."
+      },
+      {
+        "question": "What if I don’t know what’s wrong with my truck?",
+        "answer": "You don’t need to know the cause before calling. Tell us what you’ve noticed, such as an unusual noise, a leak, a warning light or a loss of power. These details give us a useful starting point."
+      },
+      {
+        "question": "Can I get a repair estimate over the phone?",
+        "answer": "Call us to discuss the work you need. Some repairs require an assessment before the cost can be estimated, especially when the cause of the problem isn’t clear."
+      },
+      {
+        "question": "How long will my truck repair take?",
+        "answer": "Repair time depends on the problem, the work involved, parts availability and the shop’s schedule. If you have a load booked or a deadline approaching, mention it when you call."
+      },
+      {
+        "question": "What should I bring to my repair appointment?",
+        "answer": "Bring any relevant service records and details of recent repairs. If you’ve recorded fault codes or taken photos of an intermittent issue, share those with the team as well."
+      },
+      {
+        "question": "Can I book repairs for more than one truck?",
+        "answer": "Contact us with the number of trucks, the work each one needs and when they’re available. We can discuss scheduling for your fleet and the units that need attention first."
+      },
+      {
+        "question": "Where is Seven Sea located?",
+        "answer": "Seven Sea is based in Prince George, BC. Visit our contact page for the shop location and directions, or call us before heading over."
+      }
+    ],
+    "listing": {
+      "title": "Heavy-Duty Truck Repair",
+      "headline": "Let’s Get Your Truck Sorted.",
+      "description": "A truck problem can put your entire schedule on hold. Seven Sea provides heavy-duty truck repair to help you address the issue and get back to hauling. Call our shop to discuss your concerns and arrange a visit.",
+      "checklistTitle": "Tell Us About Your Truck",
+      "checklist": [
+        "Make and model",
+        "Symptoms you’ve noticed",
+        "Warning lights or fault codes",
+        "Your repair timeline"
+      ],
+      "explore": "Explore Truck Repairs",
+      "action": "Speak to the Shop"
+    },
+    "metaDescription": "When your truck needs attention, your business feels it. Seven Sea provides heavy-duty truck repair in Prince George, BC. Tell us what’s wrong, and let’s arrange your visit to the shop."
   },
   {
-    slug: "trailer-repair",
-    title: "Trailer repair",
-    word: "Trailers",
-    menuLine: "The load behind the truck",
-    metaDescription:
-      "Trailer repair at Seven Sea in Prince George, BC. Call about what isn’t working and arrange a time to bring your trailer in.",
-    lede: "Repairs for the trailer behind the truck, at our Prince George shop. Call about what’s wrong and arranging a time to bring it in.",
-    highlight:
-      "The trailer carries the load, and the schedule with it. [[Tell us the trailer type]] and [[what isn’t working]], and we’ll talk through [[the next step]] and [[a time to bring it in]].",
-    action: "Call about a trailer",
-    sticker: "Tell us the trailer type",
-    hero: "reefer",
-    inset: "wheel",
-    statement: ["fleetYard", "wrenches"],
-    tellUs: [
-      {
-        field: "Unit",
-        title: "The trailer",
-        text: "Its type, such as a dry van, flatbed or reefer, and its length.",
-        photo: "reefer",
-      },
-      {
-        field: "Problem",
-        title: "What isn’t working",
-        text: "Lights, doors, tires, a noise or anything else you’ve noticed on the road.",
-        photo: "wheel",
-      },
-      {
-        field: "Location",
-        title: "Where it is now",
-        text: "Hooked up, parked at your yard or already in town.",
-        photo: "fleetYard",
-      },
-      {
-        field: "Timing",
-        title: "When you need it back",
-        text: "The next load it has to carry, or a quieter week to plan around.",
-        photo: "convoy",
-      },
+    "slug": "trailer-repair",
+    "title": "Trailer Repair",
+    "word": "Trailers",
+    "menuLine": "Ready for the Next Load.",
+    "heroTitle": "Every Load Counts.",
+    "lede": "Your trailer carries the load your business depends on. Seven Sea provides heavy-duty trailer repair in Prince George, BC. Tell us what needs attention, and we’ll help you arrange a time to bring it in.",
+    "highlight": "A truck can be ready to go, but a trailer problem can hold up the whole trip. That means a load waiting, a delivery delayed, and a schedule to rethink. At Seven Sea, we understand what’s riding on the repair. Tell us what needs attention and when your trailer is available, so we can plan a visit to the shop.",
+    "action": "Call for Trailer Repair",
+    "sticker": "Every Load Counts.",
+    "hero": "reefer",
+    "inset": "wheel",
+    "statement": [
+      "fleetYard",
+      "wrenches"
     ],
-    gallery: ["convoy", "hands", "cylinderHead", "truckRow"],
-    faqs: [
+    "cardsTitle": "Let’s Plan Your Trailer Repair",
+    "cardsLede": "Have these details ready when you call. They help us understand the issue and discuss a suitable time to bring your trailer in.",
+    "tellUs": [
       {
-        question: "Do you work on every type of trailer?",
-        answer:
-          "Call and tell us the trailer type and the problem, and we’ll tell you whether it’s work we can take on.",
+        "field": "",
+        "title": "Trailer Details",
+        "text": "Share your trailer’s type, make, year, and length, if available. Mention any recent repairs related to the problem.",
+        "photo": "reefer"
       },
-      callAhead,
-      noQuotes,
-      where,
+      {
+        "field": "",
+        "title": "What Needs Attention",
+        "text": "Describe the fault or damage you’ve noticed, when it started, and how it’s affecting the trailer. Photos can help explain the issue.",
+        "photo": "wheel"
+      },
+      {
+        "field": "",
+        "title": "Current Location",
+        "text": "Tell us where the trailer is, if it’s loaded or empty, and how you plan to bring it to the shop.",
+        "photo": "fleetYard"
+      },
+      {
+        "field": "",
+        "title": "Your Schedule",
+        "text": "Let us know your next pickup or delivery date, or a gap between loads when you can arrange repairs.",
+        "photo": "convoy"
+      }
     ],
+    "gallery": [
+      "convoy",
+      "hands",
+      "cylinderHead",
+      "truckRow"
+    ],
+    "faqTitle": "Questions About Trailer Repair?",
+    "faqLede": "Need to discuss a fault, damage, or a repair date? Call Seven Sea with your trailer details.",
+    "faqAction": "Talk to the Shop",
+    "faqs": [
+      {
+        "question": "What types of trailers do you repair?",
+        "answer": "Call us with your trailer’s type, make, and the work it needs. We’ll confirm if our shop can handle the repair before you arrange to bring it in."
+      },
+      {
+        "question": "Should I book before bringing my trailer in?",
+        "answer": "Please call ahead to check availability and discuss the problem. This also gives us a chance to go over any drop-off requirements."
+      },
+      {
+        "question": "What if the problem only happens sometimes?",
+        "answer": "Tell us when it happens and what you notice. Photos, videos and notes from the driver can help explain an issue that may not be obvious when the trailer arrives."
+      },
+      {
+        "question": "Does my trailer need to be empty for repairs?",
+        "answer": "That depends on the work required. Let us know if the trailer is loaded when you call, so we can discuss access and confirm how it should arrive."
+      },
+      {
+        "question": "Can I get an estimate before bringing it in?",
+        "answer": "We can discuss your repair needs over the phone, but some issues require an assessment before we can estimate the cost. Share as much detail as you can about the fault or damage."
+      },
+      {
+        "question": "How long will the repair take?",
+        "answer": "Timing depends on the issue, parts availability and the shop’s workload. Mention your next load or delivery deadline when booking so we can discuss the schedule."
+      },
+      {
+        "question": "Can I arrange repairs for several fleet trailers?",
+        "answer": "Yes. Contact us with the number of trailers, the issues affecting each unit and their availability. We can discuss booking the work around your fleet schedule."
+      }
+    ],
+    "listing": {
+      "title": "Trailer Repair",
+      "headline": "Ready for the Next Load.",
+      "description": "A working truck needs a working trailer. Seven Sea provides trailer repairs to address wear, damage and problems that disrupt your deliveries. Contact our shop to discuss the issue and arrange a time to bring it in.",
+      "checklistTitle": "Tell Us About Your Trailer",
+      "checklist": [
+        "Trailer type and model",
+        "Faults or damage you’ve noticed",
+        "When the issue started",
+        "Your preferred repair date"
+      ],
+      "explore": "Explore Trailer Repairs",
+      "action": "Discuss Your Trailer Repair"
+    },
+    "metaDescription": "Your trailer carries the load your business depends on. Seven Sea provides heavy-duty trailer repair in Prince George, BC. Tell us what needs attention, and we’ll help you arrange a time to bring it in."
   },
   {
-    slug: "fleets",
-    title: "Owner-operators and fleets",
-    word: "Fleets",
-    menuLine: "One truck or the whole fleet",
-    metaDescription:
-      "Seven Sea works with owner-operators and fleets in Prince George, BC. Start with a call about your equipment, your schedule and the work you need arranged.",
-    lede: "One truck or the whole fleet. Start with a conversation about your equipment, your schedule and the work you need arranged.",
-    highlight:
-      "Whether you drive [[your own rig]] or coordinate [[a whole fleet]], it starts the same way: [[a call about your equipment]], your schedule and [[the work you need arranged]].",
-    action: "Talk to the shop",
-    sticker: "One rig or the whole fleet",
-    hero: "fleetYard",
-    inset: "truckRow",
-    statement: ["winter", "workshop"],
-    tellUs: [
-      {
-        field: "Units",
-        title: "How many units",
-        text: "One rig or several, and the mix of trucks and trailers.",
-        photo: "truckRow",
-      },
-      {
-        field: "Work",
-        title: "What’s due or wrong",
-        text: "A problem on one unit, or work you want to plan across several.",
-        photo: "wrenches",
-      },
-      {
-        field: "Schedule",
-        title: "When units can come off the road",
-        text: "The windows that keep your loads moving while the work gets done.",
-        photo: "winter",
-      },
-      {
-        field: "Contact",
-        title: "Who we talk to",
-        text: "The driver, the owner-operator or the person coordinating the fleet.",
-        photo: "hands",
-      },
+    "slug": "fleets",
+    "title": "Owner-operators and Fleets",
+    "word": "Fleets",
+    "menuLine": "Owner-Operator & Fleet Support",
+    "heroTitle": "Your Equipment. Your Business. Our Support.",
+    "lede": "Truck and trailer repair for owner-operators and fleets in Prince George, BC. From the truck you drive every day to the units you manage, Seven Sea helps you arrange repairs with your operating schedule in mind.",
+    "highlight": "When you own the truck, downtime comes out of your pocket. When you manage a fleet, it means rearranging drivers, loads and deliveries. At Seven Sea, we understand that repairs are a business decision as much as a mechanical one. Tell us which units need attention and when you can spare them. We’ll discuss availability and help you plan the work.",
+    "action": "Discuss Your Repair Needs",
+    "sticker": "Your Equipment. Your Livelihood.",
+    "hero": "fleetYard",
+    "inset": "truckRow",
+    "statement": [
+      "winter",
+      "workshop"
     ],
-    gallery: ["convoy", "mechanicRed", "sparks", "reefer"],
-    faqs: [
+    "cardsTitle": "Good Planning Starts Here",
+    "cardsLede": "One truck or several units, these details help us discuss the work, check availability and coordinate your booking.",
+    "tellUs": [
       {
-        question: "Do you work with fleets?",
-        answer:
-          "Yes. Fleet coordinators and owner-operators start the same way: a call about your equipment, your schedule and the work you need arranged.",
+        "field": "",
+        "title": "Your Equipment",
+        "text": "Tell us how many trucks or trailers need attention. Include their make, model and unit numbers to help identify each one.",
+        "photo": "truckRow"
       },
       {
-        question: "Can we arrange work on several units?",
-        answer:
-          "Call to talk through how many units and your schedule, and we’ll discuss what can be arranged.",
+        "field": "",
+        "title": "Repair Needs",
+        "text": "Share the issues affecting each vehicle, along with any relevant repair history. Let us know which concerns are your priority.",
+        "photo": "wrenches"
       },
-      noQuotes,
-      where,
+      {
+        "field": "",
+        "title": "Availability",
+        "text": "Tell us when each unit can come into the shop and when it’s next needed for work. We’ll use those dates to discuss scheduling.",
+        "photo": "winter"
+      },
+      {
+        "field": "",
+        "title": "Main Contact",
+        "text": "Provide the name and number of the person handling the booking, repair decisions and collection arrangements.",
+        "photo": "hands"
+      }
     ],
-  },
+    "gallery": [
+      "convoy",
+      "mechanicRed",
+      "sparks",
+      "reefer"
+    ],
+    "faqTitle": "Questions About Your Repair Plans?",
+    "faqLede": "Managing one truck or several units? Call us to discuss the work you need and the dates you have available.",
+    "faqAction": "Discuss Your Equipment",
+    "faqs": [
+      {
+        "question": "Do you work with individual owner-operators?",
+        "answer": "Yes. You don’t need a fleet to work with Seven Sea. Contact us about your truck or trailer, explain the issue and check availability for a shop visit."
+      },
+      {
+        "question": "Can we arrange repairs for several fleet units?",
+        "answer": "Yes. Share the number of trucks and trailers, the work each unit needs and your priorities. We can then discuss suitable booking dates."
+      },
+      {
+        "question": "Can we bring units in at different times?",
+        "answer": "Talk to us about bringing units in separately. Scheduling depends on shop availability and the work required, so share the dates each vehicle can be taken off the road."
+      },
+      {
+        "question": "What information do you need to plan fleet repairs?",
+        "answer": "Provide the make, model and unit number for each vehicle, a description of its issues and any relevant service history. Include your preferred drop-off dates and upcoming deadlines."
+      },
+      {
+        "question": "Can our fleet manager handle the booking?",
+        "answer": "Yes. Nominate a main contact when arranging the work. Let us know who will handle repair decisions, scheduling and collection, along with their contact details."
+      },
+      {
+        "question": "Can you estimate costs for multiple units?",
+        "answer": "Contact us to discuss each unit’s repair needs. Some work requires an assessment before an estimate can be prepared, particularly when the cause of a fault is unclear."
+      },
+      {
+        "question": "What if our operating schedule changes?",
+        "answer": "Call us as soon as your plans change. We can review availability and discuss a revised booking. Early notice gives us more time to coordinate the work."
+      }
+    ],
+    "listing": {
+      "title": "Owner-Operator & Fleet Support",
+      "headline": "Your Equipment. Your Livelihood.",
+      "description": "Every truck off the road affects your business. Seven Sea supports owner-operators and fleets with truck and trailer repairs. Discuss your priorities and vehicle availability with us so we can plan the work around your operating needs.",
+      "checklistTitle": "Let’s Plan Your Repairs",
+      "checklist": [
+        "Number and type of units",
+        "Repairs each unit needs",
+        "Available drop-off dates",
+        "Main contact for updates"
+      ],
+      "explore": "Explore Fleet Support",
+      "action": "Discuss Your Equipment"
+    },
+    "metaDescription": "Truck and trailer repair for owner-operators and fleets in Prince George, BC. From the truck you drive every day to the units you manage, Seven Sea helps you arrange repairs with your operating schedule in mind."
+  }
 ];
 
 export function getService(slug: string) {

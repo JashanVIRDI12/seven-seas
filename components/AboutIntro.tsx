@@ -14,18 +14,21 @@ export function AboutIntro() {
       <div className="container">
         <div className="about-intro-head">
           <h2 id="about-approach-title" className="about-intro-title">
-            <span>Straight talk.</span>{" "}
-            <span>Heavy-duty work.</span>
+            <span>Got A Problem?</span>{" "}
+            <span>We Have A Solution.</span>
           </h2>
           <div className="about-intro-copy">
             <p>
-              A stopped truck puts more than a load on hold. It affects the
-              people, schedules, and work that depend on it.
+              Seven Sea provides heavy-duty truck and trailer repair in Prince
+              George, BC. We work with the people behind the equipment, from
+              owner-operators earning their living on the road to fleet managers
+              coordinating the day’s deliveries.
             </p>
             <p>
-              Our Prince George team starts with a conversation: what’s
-              happening, whether we can take it on, and when you can bring
-              your truck or trailer in.
+              Our approach starts with listening. We want to know what you’ve
+              noticed, what needs attention, and what your schedule looks like.
+              From there, we discuss the repair needs and make a plan to bring
+              your equipment into the shop.
             </p>
           </div>
         </div>
@@ -41,7 +44,7 @@ export function AboutIntro() {
                 style={{ objectPosition: photos.mechanicRed.focus }}
               />
             </div>
-            <figcaption>The work behind the next mile.</figcaption>
+            <figcaption>Your Next Haul Starts Here.</figcaption>
           </figure>
 
           <div className="about-intro-detail">
@@ -55,13 +58,13 @@ export function AboutIntro() {
               />
             </figure>
             <div className="about-intro-next">
-              <h3>Start with a conversation.</h3>
+              <h3>Talk to Our Team</h3>
               <p>
-                Tell us the make, the symptoms, and where the truck is now.
-                We’ll talk through the next step.
+                Tell us what’s wrong with your truck or trailer. We’ll help you
+                plan the next step.
               </p>
               <Button href={business.phoneHref} icon={<PhoneIcon />}>
-                Call the shop
+                Talk to Our Team
               </Button>
             </div>
           </div>

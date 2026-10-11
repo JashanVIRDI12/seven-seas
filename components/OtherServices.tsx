@@ -16,7 +16,7 @@ export function OtherServices({ current }: { current: ServiceSlug }) {
             Other services
           </RevealHeading>
           <p className="section-lede">
-            The same shop and the same first step: a call.
+            Heavy-duty truck and trailer repairs for owner-operators and fleets.
           </p>
         </header>
         <ul className="os-grid">

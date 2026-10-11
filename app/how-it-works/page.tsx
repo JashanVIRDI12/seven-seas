@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { business } from "@/data/business";
-import { checklist, stepPages, steps } from "@/data/content";
+import { processChecklist, processFaqs, stepPages } from "@/data/content";
 import { photos } from "@/data/photos";
 import { canonical } from "@/lib/site";
 import { PhotoHero } from "@/components/PhotoHero";
@@ -19,7 +19,7 @@ import {
 export const metadata: Metadata = {
   title: "How it works",
   description:
-    "How a repair with Seven Sea works, from the first phone call to your truck back on the road. Heavy-duty truck and trailer repair in Prince George, BC.",
+    "From the first call to collecting your truck or trailer, know what to expect at Seven Sea. Here’s how we arrange your visit, discuss the work and handle your repair.",
   alternates: { canonical: canonical("/how-it-works") },
 };
 
@@ -28,7 +28,7 @@ function StepExtra({ index }: { index: number }) {
   if (index === 0)
     return (
       <ul className="hw-list">
-        {checklist.map((item) => (
+        {processChecklist.map((item) => (
           <li key={item}>
             <span className="hw-check" aria-hidden="true">
               <CheckIcon />
@@ -41,7 +41,7 @@ function StepExtra({ index }: { index: number }) {
   if (index === 1)
     return (
       <Button href={business.phoneHref} variant="navy" icon={<PhoneIcon />}>
-        {business.phoneDisplay}
+        Book a Shop Visit
       </Button>
     );
   if (index === 2)
@@ -58,13 +58,13 @@ function StepExtra({ index }: { index: number }) {
           variant="ghost"
           icon={<ArrowUpRight />}
         >
-          Get directions
+          Get Directions
         </Button>
       </div>
     );
   return (
     <Button href={business.phoneHref} icon={<PhoneIcon />}>
-      Start with a call
+      Arrange Your Repair
     </Button>
   );
 }
@@ -76,15 +76,15 @@ export default function HowItWorksPage() {
         photo="wheel"
         compact
         crumbs={[{ label: "Home", href: "/" }, { label: "How it works" }]}
-        title="How it works"
-        lede="Four steps from a stopped truck to a moving one. Every repair starts with a phone call."
+        title="Your Repair Starts Here"
+        lede="From the first call to collecting your truck or trailer, know what to expect at Seven Sea. Here’s how we arrange your visit, discuss the work and handle your repair."
         actions={
           <>
             <Button href={business.phoneHref} icon={<PhoneIcon />}>
-              Call the shop
+              Call to Arrange a Repair
             </Button>
             <Button href="#steps-title" variant="glass" icon={<ArrowDown />}>
-              See the steps
+              See the Steps
             </Button>
           </>
         }
@@ -94,17 +94,17 @@ export default function HowItWorksPage() {
         <div className="container">
           <header className="section-head">
             <RevealHeading id="steps-title" className="display">
-              The road back
+              From Your Call to Collection
             </RevealHeading>
             <p className="section-lede">
-              The same four steps every time, whether it’s one truck or a whole
-              fleet.
+              Four steps to guide your truck or trailer repair, so you know what
+              happens next and what we need from you.
             </p>
           </header>
 
           <ol className="hw-steps">
-            {steps.map((step, i) => {
-              const photo = photos[stepPages[i].photo];
+            {stepPages.map((step, i) => {
+              const photo = photos[step.photo];
               return (
                 <li key={step.title} className="hw-step">
                   <span className="hw-num" aria-hidden="true">
@@ -112,11 +112,11 @@ export default function HowItWorksPage() {
                   </span>
                   <div className="hw-copy">
                     <span className="hw-stop">
-                      Step {i + 1} of {steps.length}
+                      Step {i + 1} of {stepPages.length}
                     </span>
                     <h3>{step.title}</h3>
                     <p className="hw-text">{step.text}</p>
-                    <p className="hw-more">{stepPages[i].more}</p>
+                    <p className="hw-more">{step.more}</p>
                     <StepExtra index={i} />
                   </div>
                   <figure className="hw-photo">
@@ -135,7 +135,12 @@ export default function HowItWorksPage() {
         </div>
       </section>
 
-      <Faq />
+      <Faq
+        items={processFaqs}
+        title="Know What to Expect"
+        lede="Have a question before bringing your truck or trailer in? Call us to discuss the problem and plan your visit."
+        action="Talk to the Shop"
+      />
       <CallToAction />
     </main>
   );

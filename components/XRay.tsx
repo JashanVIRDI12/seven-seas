@@ -150,14 +150,14 @@ export function XRay() {
       <div className="container xray-grid">
         <div className="xray-copy">
           <RevealHeading id="xray-title" className="display">
-            Not sure what’s wrong?
+            Something Feels Off? Let’s Talk.
           </RevealHeading>
           <p className="section-lede">
-            Describe the noise, the warning light or what the trailer is doing.
-            We’ll talk you through the next step.
+            An unusual noise, a warning light, or a change in performance? Tell us
+            what you’ve noticed so we can help you plan a visit to the shop.
           </p>
           <div className="xray-ready">
-            <h3>Have this ready when you call</h3>
+            <h3>A Few Details Help Us Get Started</h3>
             <ul className="xray-checklist">
               {checklist.map((item) => (
                 <li key={item}>
@@ -170,7 +170,7 @@ export function XRay() {
             </ul>
           </div>
           <Button href={business.phoneHref} icon={<PhoneIcon />}>
-            {`Call ${business.phoneDisplay}`}
+            Call the Shop
           </Button>
         </div>
         <figure className="xray-stage">

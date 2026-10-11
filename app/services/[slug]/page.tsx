@@ -82,7 +82,8 @@ export default async function ServicePage({
           { label: "Services", href: "/services" },
           { label: service.title },
         ]}
-        title={service.title}
+        eyebrow={service.title}
+        title={service.heroTitle}
         lede={service.lede}
         actions={
           <>
@@ -90,7 +91,7 @@ export default async function ServicePage({
               {service.action}
             </Button>
             <Button href="#tell-title" variant="glass" icon={<ArrowDown />}>
-              What to tell us
+              What to Tell Us
             </Button>
           </>
         }
@@ -102,8 +103,8 @@ export default async function ServicePage({
       />
       <PhotoCards
         id="tell-title"
-        title="What to tell us"
-        lede="Four things that make the first call quick. Have what you can; we’ll ask about the rest."
+        title={service.cardsTitle}
+        lede={service.cardsLede}
         items={service.tellUs.map((item) => ({
           photo: item.photo,
           label: item.field,
@@ -111,11 +112,13 @@ export default async function ServicePage({
           text: item.text,
         }))}
       />
-      <Mosaic keys={service.gallery} line={`${service.sticker}.`} />
+      <Mosaic keys={service.gallery} line={service.sticker} />
       <OtherServices current={service.slug} />
       <Faq
         items={service.faqs}
-        title={`Questions about ${service.title.toLowerCase()}`}
+        title={service.faqTitle}
+        lede={service.faqLede}
+        action={service.faqAction}
       />
       <CallToAction />
     </main>

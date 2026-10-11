@@ -4,12 +4,10 @@ import Image from "next/image";
 import { useRef } from "react";
 import { business } from "@/data/business";
 import { photos } from "@/data/photos";
-import { flipWords } from "@/data/content";
 import { documentOffset, gsap, useGSAP, MEDIA } from "@/lib/motion";
 import { onIntroDone } from "@/lib/intro";
 import { Button } from "./Button";
 import { Magnetic } from "./Magnetic";
-import { FlipWord } from "./FlipWord";
 import { ArrowDown, ArrowUpRight, PhoneIcon, Stars } from "./Icons";
 
 const letters = "SEVEN SEA".split("");
@@ -192,7 +190,7 @@ export function Hero() {
         </p>
         <div className="hero-meta">
           <p className="hero-tag">
-            Heavy-duty truck and trailer repair in Prince George, BC
+            Truck and trailer repair in Prince George, BC.
           </p>
           <a
             className="hero-rating"
@@ -226,13 +224,13 @@ export function Hero() {
               />
               <div className="hero-copy">
                 <h1 id="hero-title" className="hero-title">
-                  <span className="sr-only">Keep the north moving.</span>
+                  <span className="sr-only">Heavy-Duty Repairs. Back to Business.</span>
                   <span className="ht-line" aria-hidden="true">
-                    <span className="ht-in">Keep the</span>
+                    <span className="ht-in">Heavy-Duty Repairs.</span>
                   </span>
                   <span className="ht-line" aria-hidden="true">
                     <span className="ht-in">
-                      <FlipWord words={flipWords} /> moving.
+                      Back to Business.
                     </span>
                   </span>
                 </h1>
@@ -243,11 +241,11 @@ export function Hero() {
                       variant="red"
                       icon={<PhoneIcon />}
                     >
-                      Call the shop
+                      Call the Shop
                     </Button>
                   </Magnetic>
                   <Button href="#services" variant="glass" icon={<ArrowDown />}>
-                    See services
+                    Explore Our Services
                   </Button>
                 </div>
               </div>

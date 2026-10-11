@@ -33,7 +33,7 @@ const brand = localFont({
 const title =
   "Heavy-Duty Truck & Trailer Repair in Prince George, BC | Seven Sea";
 const description =
-  "Keep the north moving. Seven Sea Truck & Trailer Repair Ltd. provides heavy-duty truck and trailer repair in Prince George, British Columbia. Call to arrange service.";
+  "Truck and trailer repair in Prince George, BC. Seven Sea helps you handle repair needs and get your equipment ready for the work ahead.";
 export const metadata: Metadata = {
   // Local social previews work while the production origin remains unset.
   metadataBase: new URL(siteUrl ?? "http://localhost:3000"),

@@ -36,7 +36,7 @@ export function PhotoCards({
                 />
               </figure>
               <div className="pc-body">
-                <span className="pc-label">{item.label}</span>
+                {item.label && <span className="pc-label">{item.label}</span>}
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
               </div>

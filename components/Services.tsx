@@ -167,11 +167,11 @@ export function Services() {
         <div className="container">
           <header className="section-head">
             <RevealHeading id="services-title" className="display">
-              What we fix
+              Repair Support for Every Haul
             </RevealHeading>
             <p className="section-lede">
-              One shop for the truck, the trailer behind it and the fleet they
-              belong to. Pick the one that’s holding you up.
+              Heavy-duty truck and trailer repairs for owner-operators and fleets.
+              Find the service you need to get your equipment back to work.
             </p>
           </header>
           <ul className="split-grid">

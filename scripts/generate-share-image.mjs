@@ -25,15 +25,15 @@ try {
     .wordmark{margin:0;font-family:Unbounded,sans-serif;font-size:105px;font-weight:800;letter-spacing:-6px;line-height:1.08}
     .meta{display:flex;justify-content:space-between;padding:15px 0 19px;border-bottom:2px solid #102b4e;font-size:16px;font-weight:700;letter-spacing:1.1px;text-transform:uppercase}
     .spread{display:grid;grid-template-columns:380px 1fr;gap:24px;padding-top:24px;height:360px}
-    h1{font-size:73px;letter-spacing:-3px;line-height:.94;margin:15px 0;font-weight:800}h1 span{display:block}
+    h1{font-size:57px;letter-spacing:-2px;line-height:1;margin:15px 0;font-weight:800}h1 span{display:block}
     .red{color:#c52c34}.photo{width:100%;height:336px;object-fit:cover;object-position:64% 44%}
     .footer{display:flex;justify-content:space-between;align-items:center;padding-top:20px;font-weight:700;font-size:18px}
     .call{background:#c52c34;color:white;padding:10px 18px;font-size:17px;letter-spacing:.3px}
   </style></head><body>
     <p class="wordmark">SEVEN SEA</p>
     <div class="meta"><span>Truck &amp; trailer repair</span><span>Prince George · British Columbia</span></div>
-    <div class="spread"><h1><span>Keep the</span><span>north</span><span class="red">moving.</span></h1><img class="photo" alt="Illustrative highway freight scene" src="data:image/webp;base64,${photo.toString("base64")}"></div>
-    <div class="footer"><span>Heavy-duty work. Local know-how.</span><span class="call">Call ${phone} ↗</span></div>
+    <div class="spread"><h1><span>Heavy-Duty</span><span>Repairs.</span><span class="red">Back to</span><span class="red">Business.</span></h1><img class="photo" alt="Illustrative highway freight scene" src="data:image/webp;base64,${photo.toString("base64")}"></div>
+    <div class="footer"><span>Your Next Haul Starts Here.</span><span class="call">Call ${phone} ↗</span></div>
   </body></html>`, { waitUntil: "load" });
   await page.evaluate(() => document.fonts.ready);
   const screenshot = await page.screenshot({ type: "png" });

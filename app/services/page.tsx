@@ -14,7 +14,7 @@ import { PhoneIcon } from "@/components/Icons";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Heavy-duty truck repair, trailer repair, and work for owner-operators and fleets at Seven Sea in Prince George, BC.",
+    "Truck and trailer repairs in Prince George, BC, for the equipment your business depends on. Explore our services for owner-operators and fleets.",
   alternates: { canonical: canonical("/services") },
 };
 
@@ -24,11 +24,11 @@ export default function ServicesPage() {
       <PhotoHero
         photo="workshop"
         crumbs={[{ label: "Home", href: "/" }, { label: "Services" }]}
-        title="What we fix"
-        lede="Heavy-duty truck and trailer repair in Prince George, for owner-operators and fleets alike."
+        title="Heavy-Duty Repair Services"
+        lede="Truck and trailer repairs in Prince George, BC, for the equipment your business depends on. Explore our services for owner-operators and fleets."
         actions={
           <Button href={business.phoneHref} icon={<PhoneIcon />}>
-            Call the shop
+            Get in Touch
           </Button>
         }
       >
@@ -54,7 +54,7 @@ export default function ServicesPage() {
         <ServiceChapter key={service.slug} service={service} index={i} />
       ))}
 
-      <ImageType text="Keep the north moving." photo="mechanicRed" />
+      <ImageType text="Back to Business." photo="mechanicRed" />
       <CallToAction />
     </main>
   );

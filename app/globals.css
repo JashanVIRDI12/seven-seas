@@ -837,8 +837,7 @@ html.motion-ok:has(.hero-mark) .site-header .wordmark-text {
     rgba(10, 22, 51, 0) 68%
   );
 }
-/* A fixed grid: the headline and buttons keep their places whichever word
-   the pill shows. Buttons sit beside the headline only on wide screens. */
+/* Buttons sit beside the headline only on wide screens. */
 .hero-copy {
   position: absolute;
   inset: auto 0 0;
@@ -856,7 +855,7 @@ html.motion-ok:has(.hero-mark) .site-header .wordmark-text {
   }
 }
 .hero-title {
-  font-size: clamp(2.75rem, 7.6vw, 7.75rem);
+  font-size: clamp(2.25rem, 5.6vw, 5.75rem);
   font-weight: 780;
   letter-spacing: -0.02em;
   line-height: 0.9;
@@ -1270,6 +1269,29 @@ html.motion-ok:has(.hero-mark) .site-header .wordmark-text {
 .is-3d .split-back {
   transform: rotateY(180deg);
 }
+@media (max-height: 950px), (max-width: 1279px) {
+  .is-3d .split-card {
+    height: min(58vh, 470px);
+  }
+  .is-3d .split-back {
+    gap: 10px;
+    padding: 20px;
+  }
+  .is-3d .split-back h3 {
+    font-size: clamp(1.5rem, 2.1vw, 2rem);
+  }
+  .is-3d .split-back p {
+    font-size: 1rem;
+  }
+  .is-3d .split-back .split-prompt {
+    padding: 8px 10px;
+    font-size: 0.9375rem;
+  }
+  .is-3d .split-glyph {
+    width: 44px;
+    height: 44px;
+  }
+}
 
 /* ----- X-ray: under the hood --------------------------------------------- */
 
@@ -1647,6 +1669,19 @@ html.motion-ok:has(.hero-mark) .site-header .wordmark-text {
 .is-horizontal .process-road {
   display: block;
   flex: none;
+}
+@media (max-height: 850px) {
+  .is-horizontal .step-card {
+    gap: 20px;
+    min-height: 0;
+    padding: 20px;
+  }
+  .is-horizontal .step-num {
+    font-size: 3.5rem;
+  }
+  .is-horizontal .road {
+    height: 80px;
+  }
 }
 .road {
   position: relative;
@@ -2643,6 +2678,11 @@ a.bento-card:hover .icon-chip {
   line-height: 0.86;
   text-wrap: balance;
 }
+.ph-eyebrow {
+  margin-bottom: 18px;
+  font-size: clamp(1rem, 1.6vw, 1.5rem);
+  font-weight: 650;
+}
 .ph-compact .ph-title {
   font-size: clamp(2.4rem, 9.6vw, 9.75rem);
 }
@@ -2804,6 +2844,11 @@ a.bento-card:hover .icon-chip {
   letter-spacing: -0.03em;
   line-height: 0.92;
   text-wrap: balance;
+}
+.ch-headline {
+  font-size: clamp(1.4rem, 2.2vw, 2rem);
+  font-weight: 650;
+  line-height: 1.15;
 }
 .ch-lede {
   max-width: 40ch;

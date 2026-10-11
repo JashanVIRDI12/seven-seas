@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { business } from "@/data/business";
-import { checklist } from "@/data/content";
+import { checklist, contactFaqs } from "@/data/content";
 import { photos } from "@/data/photos";
 import { canonical } from "@/lib/site";
 import { PhotoHero } from "@/components/PhotoHero";
@@ -20,7 +20,7 @@ import {
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Call Seven Sea Truck & Trailer Repair at +1 639-336-0003 or visit 7063 Trygg Ct, Prince George, BC. Repairs are arranged by phone.",
+    "Tell us what’s happening with your truck or trailer. Call Seven Sea in Prince George to discuss the issue, check availability and arrange your shop visit.",
   alternates: { canonical: canonical("/contact") },
 };
 
@@ -32,12 +32,12 @@ export default function ContactPage() {
         photo="convoy"
         compact
         crumbs={[{ label: "Home", href: "/" }, { label: "Contact" }]}
-        title="Contact"
-        lede="Repairs are arranged by phone. Call the shop, tell us what’s happening, and we’ll talk through the next step."
+        title="Need Help? Let’s Talk"
+        lede="Tell us what’s happening with your truck or trailer. Call Seven Sea in Prince George to discuss the issue, check availability and arrange your shop visit."
         actions={
           <>
             <Button href={business.phoneHref} icon={<PhoneIcon />}>
-              {business.phoneDisplay}
+              Call the Shop
             </Button>
             <Button
               href={business.googleMapsUrl}
@@ -45,7 +45,7 @@ export default function ContactPage() {
               variant="glass"
               icon={<ArrowUpRight />}
             >
-              Get directions
+              Get Directions
             </Button>
           </>
         }
@@ -55,22 +55,24 @@ export default function ContactPage() {
         <div className="container">
           <header className="section-head">
             <RevealHeading id="cx-title" className="display">
-              Reach the shop
+              Before You Head Over
             </RevealHeading>
             <p className="section-lede">
-              One number, one address. Everything else is settled on the call.
+              Need to check availability or discuss a repair? Give us a call so
+              you have the details before making the trip.
             </p>
           </header>
 
           <div className="cx-grid">
             <article className="cx-card cx-call">
-              <h3 className="cx-label">Call to arrange service</h3>
+              <h3 className="cx-label">Call Seven Sea</h3>
               <a className="cx-phone" href={business.phoneHref}>
                 {business.phoneDisplay}
               </a>
               <p>
-                Bookings are made by phone. This website doesn’t take
-                appointments or give quotes.
+                Call the shop with your truck or trailer details and explain what
+                needs attention. We’ll discuss availability and arrange a time to
+                bring it in.
               </p>
               <div className="cx-actions">
                 <Button
@@ -116,8 +118,9 @@ export default function ContactPage() {
               </h3>
               <LocalTime />
               <p className="cx-push">
-                Please call ahead to confirm hours before you bring a truck or
-                trailer in.
+                Please call ahead to confirm shop hours and availability.
+                This also gives us a chance to discuss your equipment and any
+                drop-off requirements.
               </p>
             </article>
 
@@ -149,7 +152,12 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <Faq />
+      <Faq
+        items={contactFaqs}
+        title="Before You Head Over"
+        lede="Need to check availability or discuss a repair? Give us a call so you have the details before making the trip."
+        action="Call Seven Sea"
+      />
     </main>
   );
 }

@@ -38,7 +38,7 @@ export function LocalTime() {
     <p className="time-value">
       <span className="sr-only">{time}</span>
       <span className="time-clock">
-        {digits ? <Odometer value={digits} /> : "—"}
+        {digits ? <Odometer value={digits} /> : ""}
         {period && <span className="time-period"> {period}</span>}
       </span>
       <span className="time-day">{day}</span>
@@ -125,11 +125,12 @@ export function Local() {
       <div className="container">
         <header className="section-head">
           <RevealHeading id="shop-title" className="display">
-            Local to Prince George
+            Heavy-Duty Repair. Right Here in Prince George.
           </RevealHeading>
           <p className="section-lede">
-            Long highways, hard winters and freight that has to keep moving.
-            Prince George is home, and the north is the job.
+            Seven Sea provides heavy-duty truck and trailer repair in Prince
+            George, BC. Based nearby or passing through? Contact our shop to
+            discuss what your equipment needs.
           </p>
         </header>
 
@@ -143,8 +144,8 @@ export function Local() {
               sizes="(min-width: 1024px) 66vw, 100vw"
             />
             <figcaption>
-              <strong>Built for Northern BC roads</strong>
-              <span>Highway miles. Northern conditions.</span>
+              <strong>Truck &amp; Trailer Repair</strong>
+              <span>Prince George, BC.</span>
             </figcaption>
           </figure>
 

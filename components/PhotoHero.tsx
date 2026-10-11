@@ -14,6 +14,7 @@ export function PhotoHero({
   photo,
   crumbs,
   title,
+  eyebrow,
   lede,
   actions,
   children,
@@ -22,6 +23,7 @@ export function PhotoHero({
   photo: PhotoKey;
   crumbs: { label: string; href?: string }[];
   title: string;
+  eyebrow?: string;
   lede: string;
   actions?: ReactNode;
   children?: ReactNode;
@@ -66,6 +68,7 @@ export function PhotoHero({
       <div className="container ph-inner">
         <Breadcrumbs items={crumbs} />
         <div className="ph-bottom">
+          {eyebrow && <p className="ph-eyebrow">{eyebrow}</p>}
           <h1 id="page-title" className="ph-title">
             {title}
           </h1>
